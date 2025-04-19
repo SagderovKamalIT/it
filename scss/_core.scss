@@ -1,0 +1,51 @@
+body {
+  font-family: 'Russo One', 'Inter', sans-serif;
+  background: #FFFFFF;
+}
+
+html {
+  font-size: 90%; 
+}
+
+.container { 
+  @include min-max(320px, 100%); 
+}
+
+
+.wrap {
+  @include min-max(320px, 1660px);
+  width: 100%;
+  padding: 0 3.75rem;
+  box-sizing: border-box;
+}
+
+body, 
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2, 
+h3,
+p {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3rem;
+  color: $water-course;
+}
+
+.wrapper {
+  border: 4px solid #18cbed;
+  border-radius: 30px;
+  background: #FFFFFF;
+}
+
+
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 70%; 
+  }
+}

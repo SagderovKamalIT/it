@@ -1,0 +1,56 @@
+.professors {
+  background: linear-gradient(to bottom, $white ,$water-course);
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1.563rem;
+
+    &-container {
+      padding: 1.375rem 1.875rem;
+
+
+    }
+
+  }
+
+  &-wrapper {
+    border: 4px solid $water-course;
+    border-radius: 30px;
+    background: #FFFFFF;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 3.375rem;
+
+    &-img {
+      width: 14.063rem;
+      height: 14.063rem;
+      align-self: center;
+    }
+
+    &-text {
+
+      align-self: center;
+
+      h3 {
+
+        font-size: 1.5rem;
+        color: $orange;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 1.375rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.practice {
+  padding-top: 5rem;
+  background-color: $white;
+  padding-bottom: 8.188rem;
+
+  &__title {
+    margin-bottom: 7.375rem;
+  }
+
+  &__list {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 1.063rem;
+    color: $white;
+  }
+
+  &__item {
+    padding: 3.125rem;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, $legend-plate, $swimmer);
+  
+  &-title {
+  font-family: "Russo One", sans-serif;;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  }
+
+  p {
+    font-size: 1.875rem;
+  }
+  
+
+  &-paragraph {
+    font-weight: 600;
+  }
+  }
+}

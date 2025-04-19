@@ -1,0 +1,69 @@
+.career {
+  background: linear-gradient(to bottom, $legend-plate, $water-course);
+  padding-top: 2.125rem;
+  padding-bottom: 7.438rem ;
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 5.625rem;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.438rem;
+    align-self: center;
+
+    &-title {
+      color: $water-course;
+      padding: 4.625rem 2.188rem;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    &-button {
+      @include btn($white, $swimmer, 1.875rem, $white, 1.75rem, 0.96875rem, 6.4375rem, 0.96875rem, 6.4375rem);
+    white-space: nowrap;
+    }
+
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+
+    &-section {
+      padding: 1.813rem 3.125rem 1.813rem 6.563rem;
+     
+    }
+
+    &-title {
+      font-size: 2.25rem;
+      color: $orange;
+      margin-bottom: 0.3rem
+
+    }
+
+    &-paragraph {
+      font-family: "Inter", sans-serif;
+      font-size: 2.25rem;
+      color: $black;
+      margin-bottom: 2rem;
+    }
+
+    &-subtitle {
+      font-family: "Inter", sans-serif;
+      text-align: end;
+      font-size: 1.875rem;
+      font-weight: 600;
+    }
+
+
+  }
+
+
+
+  
+}

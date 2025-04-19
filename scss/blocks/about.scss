@@ -1,0 +1,130 @@
+.container {
+  background-image: url(../../assets/images/shadow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.about {
+  background-color: $legend-plate;
+  padding: 4.313rem 0 2.125rem 0;
+  background-image: url(../../assets/images/technologies.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right 0 top 10%;
+
+  &__title {
+    font-size: 2.25rem; // было 2.5rem
+    font-weight: 600;
+    color: $orange;
+    margin-bottom: 2.75rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 4.5rem;
+
+    &-head {
+      font-family: "Inter", sans-serif;
+      font-size: 1.625rem; // было 1.8rem
+      color: $cyan;
+    }
+
+    &-subtitle {
+      font-size: 2.125rem; // было 2.375rem
+      color: $white;
+    }
+
+    &-title {
+      font-size: 3.5rem; // было 3.875rem
+      line-height: 111%;
+      color: $white;
+    }
+
+    &-text {
+      font-size: 1.625rem; // было 1.8rem
+      color: $mega-teal;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      gap: 7.188rem;
+      margin-bottom: 4.188rem;
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+  
+    }
+
+    &-cost {
+      display: flex;
+      flex-direction: row;
+      gap: 8em;
+      margin-left: 9em;
+    }
+
+    &-title {
+      font-family: "Inter", sans-serif;
+      font-size: 1.625rem; // было 1.8rem
+      color: $cyan;
+    }
+
+    &-subtitle {
+      font-size: 1.625rem; // было 1.8rem
+      color: $orange;
+      align-self: center;
+      
+    }
+
+    &-year {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+
+      &-title {
+        font-family: "Inter", sans-serif;
+        font-size: 1.625rem; // было 1.8rem
+        color: $cyan;
+      }
+    }
+
+    &-price {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    
+      &-old, &-oldest {
+        font-size: 1.375rem;
+        text-decoration: line-through;
+        color: $white;
+      }
+    
+      &-new {
+        font-size: 1.625rem;
+        color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.admission {
+  background: linear-gradient(to bottom, $water-course, $water);
+  padding-top: 5.188rem;
+
+
+  &__title {
+    color: $white;
+    margin-bottom: 2.75rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.140rem;
+    padding-left: 5.5rem;
+
+    &-last {
+      margin-top: 3.140rem;;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5.5rem;
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.438rem;
+    color: $white;
+
+
+    &-title {
+      font-size: 2rem;
+    }
+
+    &-paragraph {
+      font-family: "Inter", sans-serif;
+      font-size: 2.25rem;
+
+    }
+
+    &-bold {
+      font-weight: 700;
+      padding-bottom: 0.8rem;
+      display: inline-block;
+    }
+
+    &-wrapper {
+      padding: 0.938rem 2rem;
+      border: 2px solid $white;
+      border-top: none;
+      border-radius: 1.875rem;
+      width: 80%;
+    }
+  
+
+  }
+}

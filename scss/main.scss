@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/intro.scss';
+@import 'blocks/about.scss';
+@import 'blocks/career.scss';
+@import 'blocks/education.scss';
+@import 'blocks/benefits.scss';
+@import 'blocks/practice.scss';
+@import 'blocks/partners.scss';
+@import 'blocks/outlook.scss';
+@import 'blocks/studentlife.scss';
+@import 'blocks/manager.scss';
+@import 'blocks/professor.scss';
+@import 'blocks/admission.scss';
+@import 'blocks/footer.scss';

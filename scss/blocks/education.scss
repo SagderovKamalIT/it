@@ -1,0 +1,54 @@
+.education {
+  background: linear-gradient(to bottom, $water-course, $swimmer);
+  padding-bottom: 7.438rem;
+  
+
+   &__container{
+      padding: 6.25rem 2.563rem;
+      margin-bottom: 2.813rem;
+
+
+      &-title {
+        margin-bottom: 0.5rem;
+       }
+
+       &-line {
+        border-bottom: 4px solid $water-course;
+      }
+
+      &-text {
+        font-size: 2.625rem;
+        color: $white;
+        padding: 0 7rem;
+      }
+
+      &-info {
+        margin-bottom: 4rem;
+      }
+   }
+
+   &__text {
+    padding-left: 4.063rem;
+    padding-right: 9rem;
+
+
+    &-section {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      font-size: 2.25rem;
+      font-family: "Inter", sans-serif;
+      margin: 3.5rem 0;
+    }
+
+    
+
+   
+   }
+
+ 
+
+  
+}

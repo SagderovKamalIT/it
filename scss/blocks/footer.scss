@@ -1,0 +1,73 @@
+.footer {
+  background: linear-gradient(to bottom, $water, $legend-plate);
+  padding-top: 5.5rem;
+
+  &__container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5.313rem;
+
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 3.563rem;
+  
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      gap: 1.3rem;
+
+      h3 {
+        color: $orange;
+      }
+
+      p {
+         color: $white;
+      }
+
+      span {
+        padding-right: 1rem;
+      }
+    }
+
+    &-button {
+      button {
+        @include btn($white, $white,  1.875rem, $water-course, 2rem, 1.906rem, 3.344rem, 1.906rem, 3.344rem);
+      
+        font-family: inherit;
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+
+    p {
+      color: $white;
+      font-size: 2rem;
+      font-family: "Inter", sans-serif;
+    }
+
+    span {
+      font-family: "Russo One", sans-serif;
+    }
+
+    &-container{
+      padding: 0.688rem 2.938rem;
+      display: flex;
+      justify-content: space-between;
+      background-color: $white;
+      border-radius: 1.875rem;
+    }
+
+  
+  }
+
+
+}

@@ -1,0 +1,49 @@
+.intro {
+  background-color: $legend-plate;
+  padding-top: 3.75rem; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 18.25rem; 
+    height: 5.4375rem; 
+    text-decoration: none;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
+
+  &__btn-enroll {
+    @include btn($white, $orange, 1.875rem, $white, 1.75rem, 0.96875rem, 6.4375rem, 0.96875rem, 6.4375rem);
+    white-space: nowrap;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-img {
+      width: 4.0625rem; 
+      height: 4.0625rem;
+    }
+  }
+}
+
+
+
