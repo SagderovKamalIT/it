@@ -8,8 +8,8 @@
 .about {
   background-color: $legend-plate;
   padding: 4.313rem 0 2.125rem 0;
-  // background-image: url(../../assets/images/technologies.png);
-  background-image: url(#{$base-url}/assets/images/technologies.png);
+  background-image: url(../../assets/images/technologies.png);
+  // background-image: url(#{$base-url}/assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
@@ -129,3 +129,5 @@
     }
   }
 }
+
+

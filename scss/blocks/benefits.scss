@@ -1,15 +1,14 @@
 .benefits {
   background-color: $white;
-  padding-top: 4.688rem;
+  padding-top: 4.688rem; 
   color: $water-course;
-  
 
   &__title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 58px;
+    line-height: 3.625rem; 
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem; 
   }
 
   &__block {
@@ -18,20 +17,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid $orange;
+    border-bottom: 4px solid $orange; 
 
     p {
+      width: 80%;
       margin: 0;
       font-weight: 600;
-      font-size: 24px;
+      font-size: 2rem; 
     }
 
     button {
       background-color: $gray85;
       border: none;
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
+      width: 4.7rem; 
+      height: 4.7rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,7 +47,6 @@
       img.rotated {
         transform: rotate(180deg);
       }
-      
     }
   }
 
@@ -72,7 +71,7 @@
     }
 
     &.active {
-      max-height: 1000px; 
+      max-height: 62.5rem; 
       opacity: 1;
       padding: 1.5rem 0;
     }
