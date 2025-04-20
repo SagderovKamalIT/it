@@ -58,3 +58,45 @@
 
   }
 }
+
+@media (max-width: 460px) {
+  .admission {
+    padding-top: 3rem;
+
+    &__title {
+      font-size: 1.75rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    &__list {
+      padding-left: 1rem;
+      gap: 2rem;
+
+      &-last {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-left: 1rem;
+      }
+    }
+
+    &__item {
+      gap: 1rem;
+
+      &-title {
+        font-size: 1.5rem;
+      }
+
+      &-paragraph {
+        font-size: 1.25rem;
+      }
+
+      &-wrapper {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+}

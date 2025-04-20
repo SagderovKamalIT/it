@@ -1,6 +1,6 @@
 .outlook {
-padding-bottom: 2.938rem;
-background-color: $white;
+  padding-bottom: 2.938rem;
+  background-color: $white;
 
   h2 {
     margin-bottom: 2.5rem;
@@ -17,16 +17,28 @@ background-color: $white;
       font-size: 2.25rem;
       text-align: center;
       padding: 3rem;
-      border: 0.25rem solid $orange;
+      border: 4px solid $orange;
       border-radius: 1.875rem;
       display: flex;
       justify-content: center;
       background: $white;
-      text-align: center;
       align-items: center;
     }
   }
 
+  @media (max-width: 460px) {
+    h2 {
+      font-size: 2rem; 
+      margin-bottom: 1.5rem;
+    }
 
+    &__container {
+      gap: 1rem; 
+    }
+
+    &__container &-wrapper {
+      font-size: 1.5rem; 
+      padding: 1.5rem; 
+    }
+  }
 }
-

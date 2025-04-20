@@ -1,49 +1,76 @@
 .career {
   background: linear-gradient(to bottom, $legend-plate, $water-course);
   padding-top: 2.125rem;
-  padding-bottom: 7.438rem ;
+  padding-bottom: 7.438rem;
 
   &__section {
     display: flex;
     justify-content: space-between;
     gap: 5.625rem;
+
+    @media (max-width: 460px) {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
   }
 
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     gap: 1.438rem;
     align-self: center;
+    padding: 0 1rem;
 
     &-title {
       color: $water-course;
       padding: 4.625rem 2.188rem;
       font-size: 3rem;
       text-align: center;
+
+      @media (max-width: 460px) {
+        font-size: 2.2rem;
+        padding: 2rem 1rem;
+        text-align: left;
+      }
     }
 
     &-button {
       @include btn($white, $swimmer, 1.875rem, $white, 1.75rem, 0.96875rem, 6.4375rem, 0.96875rem, 6.4375rem);
-    white-space: nowrap;
-    }
+      white-space: nowrap;
 
+      @media (max-width: 460px) {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+      }
+    }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 0.875rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
 
     &-section {
       padding: 1.813rem 3.125rem 1.813rem 6.563rem;
-     
+
+      @media (max-width: 460px) {
+        padding: 1rem 1.5rem;
+      }
     }
 
     &-title {
       font-size: 2.25rem;
       color: $orange;
-      margin-bottom: 0.3rem
+      margin-bottom: 0.3rem;
 
+      @media (max-width: 460px) {
+        font-size: 2rem;
+        text-align: left;
+      }
     }
 
     &-paragraph {
@@ -51,6 +78,11 @@
       font-size: 2.25rem;
       color: $black;
       margin-bottom: 2rem;
+
+      @media (max-width: 460px) {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+      }
     }
 
     &-subtitle {
@@ -58,12 +90,63 @@
       text-align: end;
       font-size: 1.875rem;
       font-weight: 600;
+
+      @media (max-width: 460px) {
+        font-size: 1.6rem;
+        text-align: left;
+      }
     }
-
-
   }
 
 
+  @media (max-width: 460px) {
+    padding: 2rem 1rem;
 
-  
+    &__section {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0;
+    }
+
+    &__content {
+      gap: 1.5rem;
+      padding: 0 1rem;
+
+      &-title {
+        font-size: 2.2rem;
+        text-align: left;
+      }
+
+      &-button {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+      }
+    }
+
+    &__text {
+      gap: 1.5rem;
+      padding: 0 1rem;
+
+      &-section {
+        padding: 1rem 1.5rem;
+      }
+
+      &-title {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      &-paragraph {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &-subtitle {
+        font-size: 1.6rem;
+        text-align: left;
+      }
+    }
+  }
 }

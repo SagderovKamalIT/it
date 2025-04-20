@@ -1,54 +1,87 @@
 .education {
   background: linear-gradient(to bottom, $water-course, $swimmer);
   padding-bottom: 7.438rem;
-  
 
-   &__container{
-      padding: 6.25rem 2.563rem;
-      margin-bottom: 2.813rem;
+  &__container {
+    padding: 6.25rem 2.563rem;
+    margin-bottom: 2.813rem;
 
+    &-title {
+      margin-bottom: 0.5rem;
+    }
 
-      &-title {
-        margin-bottom: 0.5rem;
-       }
+    &-line {
+      border-bottom: 4px solid $water-course;
+    }
 
-       &-line {
-        border-bottom: 4px solid $water-course;
+    &-text {
+      font-size: 2.625rem;
+      color: $white;
+      padding: 0 7rem;
+
+      @media (max-width: 460px) {
+        font-size: 2rem;
+        padding: 0 1rem;
       }
+    }
 
-      &-text {
-        font-size: 2.625rem;
-        color: $white;
-        padding: 0 7rem;
-      }
+    &-info {
+      margin-bottom: 4rem;
+    }
+  }
 
-      &-info {
-        margin-bottom: 4rem;
-      }
-   }
-
-   &__text {
+  &__text {
     padding-left: 4.063rem;
     padding-right: 9rem;
 
+    @media (max-width: 460px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
 
     &-section {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 460px) {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
     }
 
     p {
       font-size: 2.25rem;
       font-family: "Inter", sans-serif;
       margin: 3.5rem 0;
+
+      @media (max-width: 460px) {
+        font-size: 1.7rem;
+        margin: 1.5rem 0;
+      }
+    }
+  }
+
+
+  @media (max-width: 460px) {
+    padding-bottom: 4rem;
+
+    &__container {
+      padding: 3rem 1rem;
     }
 
-    
+    &__text {
+      padding-left: 1rem;
+      padding-right: 1rem;
 
-   
-   }
+      &-section {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
 
- 
-
-  
+      p {
+        font-size: 1.7rem;
+        margin: 1.5rem 0;
+      }
+    }
+  }
 }

@@ -54,3 +54,59 @@
  }
 
 }
+
+@media (max-width: 460px) {
+  .manager {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    &__title {
+      margin-bottom: 2rem;
+      font-size: 1.75rem;
+      text-align: center;
+    }
+
+    &__container {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+
+      &-img {
+        width: 16rem;
+        height: 16rem;
+      }
+
+      &-text {
+        text-align: center;
+
+        h3 {
+          font-size: 1.75rem;
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+        }
+      }
+
+      &-contacts {
+        align-items: center;
+
+        li {
+          font-size: 1.25rem;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        h4 {
+          margin: 0 0 0.5rem 0;
+        }
+
+        a {
+          word-break: break-word;
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,7 @@
 .studentlife {
   background-color: $white;
-  
 
-  &__container{
+  &__container {
     padding: 3rem;
     border: 4px solid $water-course;
 
@@ -19,10 +18,9 @@
     &-span {
       font-weight: 600;
       line-height: 2.75rem;
-      
     }
 
-    &-paragraph  {
+    &-paragraph {
       color: $water-course;
       margin-top: 2rem;
     }
@@ -49,16 +47,14 @@
 
     &-container {
       width: 100%;
-  overflow: hidden;
-  position: relative;
+      overflow: hidden;
+      position: relative;
     }
 
     &-items {
       display: flex;
       transition: transform 0.3s ease;
       padding: 0 1rem;
-
-      
     }
 
     &-item {
@@ -71,8 +67,43 @@
         width: 100%;
         height: auto;
         display: block;
-    object-fit: cover;
+        object-fit: cover;
         border-radius: 16px;
+      }
+    }
+  }
+
+
+  @media (max-width: 460px) {
+    &__container {
+      padding: 1.5rem;
+      border-width: 2px;
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      &-span {
+        line-height: 2.25rem;
+      }
+
+      &-paragraph {
+        margin-top: 1rem;
+      }
+    }
+
+    &__slider {
+      gap: 1rem;
+      margin-top: 2rem;
+
+      &-btn img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      &-item {
+        padding: 0 0.5rem;
       }
     }
   }
