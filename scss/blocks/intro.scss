@@ -1,6 +1,6 @@
 .intro {
   background-color: $legend-plate;
-  padding-top: 3.75rem; 
+  padding-top: 3.75rem;
 }
 
 .header {
@@ -12,13 +12,58 @@
   &__logo {
     display: flex;
     align-items: center;
-    width: 18.25rem; 
-    height: 5.4375rem; 
+    width: 18.25rem;
+    height: 5.4375rem;
     text-decoration: none;
 
     img {
       max-width: 100%;
       height: auto;
+    }
+  }
+
+  &__burger {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28.625rem;
+    height: 26.813rem;
+    background: linear-gradient(to bottom, $white, $swimmer);
+    padding: 2.313rem;
+    display: none;
+    z-index: 1000;
+
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      img {
+        width: 14.688rem;
+        height: 4.563rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          font-family: "Inter", sans-serif;
+          font-size: 1.7rem;
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 
@@ -34,16 +79,35 @@
   }
 
   &__link {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 1rem;
 
     &-img {
-      width: 4.0625rem; 
+      width: 4.0625rem;
       height: 4.0625rem;
     }
   }
 }
 
+.burger__open {
+  display: block !important;
+}
+
+.header__burger-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: $water;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 20;
+}
 
 
+.header__burger-close:hover {
+  text-decoration: underline;
+}

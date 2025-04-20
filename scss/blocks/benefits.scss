@@ -1,31 +1,80 @@
 .benefits {
   background-color: $white;
   padding-top: 4.688rem;
-  color: $water-course; 
+  color: $water-course;
+  
 
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
 
   &__block {
-  padding: 2rem 0;
-  font-size: 2.5rem;
-  display: flex;
-  align-self: center;
-  justify-content: space-between;
-  flex-direction: row;
-  border-bottom: 4px solid $orange;
-
-  button {
-    color: $water-course;
-    background-color: $gray85;
-    border: none;
-    border-radius: 50%;
-    font-size: 3rem;
-    width: 60px;
-    height: 60px;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid $orange;
+
+    p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    button {
+      background-color: $gray85;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      img {
+        width: 3.5rem;
+        height: 3.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      img.rotated {
+        transform: rotate(180deg);
+      }
+      
+    }
   }
 
-  p {
-    align-self: center;
-  }
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+
+    ul {
+      font-family: "Inter", sans-serif;
+      padding: 1rem 2rem;
+      margin: 0;
+      font-size: 2.6rem;
+      line-height: 1.5;
+      color: $black;
+
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &.active {
+      max-height: 1000px; 
+      opacity: 1;
+      padding: 1.5rem 0;
+    }
   }
 }

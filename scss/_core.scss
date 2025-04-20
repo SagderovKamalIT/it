@@ -1,10 +1,12 @@
 body {
   font-family: 'Russo One', 'Inter', sans-serif;
   background: #FFFFFF;
+
 }
 
 html {
   font-size: 90%; 
+  scroll-behavior: smooth;
 }
 
 .container { 
@@ -47,5 +49,24 @@ h2 {
 @media (max-width: 1400px) {
   html {
     font-size: 70%; 
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%; 
+  }
+}
+
+
+@media (max-width: 960px) {
+  html {
+    font-size: 40%; 
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 30%; 
   }
 }

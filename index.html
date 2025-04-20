@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Managment</title>
+  <title>УПРАВЛЕНИЕ В ТЕХНИЧЕСКИХ СИСТЕМАХ</title>
 
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -14,7 +14,7 @@
   <section class="intro">
     <div class="wrap">
       <header class="header">
-        <a class="header__logo" href="https://www.rudn.ru/">
+        <a class="header__logo" href="https://www.rudn.ru/" target="_blank" rel="noopener noreferrer" >
           <img src="./assets/icons/rudn-logo.svg" alt="Логотип 'РУДН'">
         </a>
 
@@ -25,9 +25,25 @@
             <a href="tel:+79998804567">
               <img class="header__link-img" src="./assets/icons/phone.svg" alt="Иконка телефона">
             </a>
-            <a href="#">
+            <a href="#"  class="js-burger__btn">
               <img class="header__link-img" src="./assets/icons/more.svg" alt="Иконка">
             </a>
+          </div>
+
+          <div class="header__burger js-burger">
+            <button class="js-close-burger header__burger-close">Закрыть</button> 
+            <div class="js-burger__content">
+              <ul class="header__burger-list">
+                <a href="https://www.rudn.ru/" target="_blank" rel="noopener noreferrer" >
+                  <img src="./assets/icons/burger-logo.svg" alt="Логотип 'РУДН'">
+                </a>
+                <li><a href="#about">О программе</a></li>
+                <li><a href="#benefits">Преимущества программы</a></li>
+                <li><a href="#partners">Партнеры и работодатели</a></li>
+                <li><a href="#manager">Преподаватели</a></li>
+                <li><a href="#footer">Контакты</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -39,7 +55,7 @@
 
   <main>
 
-    <section>
+    <section  id="about">
       <div class="about">
 
         <div class="wrap">
@@ -250,38 +266,81 @@
       </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefits" id="benefits">
       <div class="wrap">
         <h2 class="benefits__title">ПРЕИМУЩЕСТВА ПРОГРАММЫ</h2>
 
         <div class="benefits__block">
           <p>Наличие бюджетных мест</p>
-
-          <button>+</button>
+          <button class="benefits__toggle js-benefits__toggle">
+            <img src="./assets/icons/double-down.svg" alt="Раскрыть" />
+          </button>
+        </div>
+        <div class="benefits__content js-benefits__content">
+          <ul>
+            <li>Возможность обучения за счет средств федерального бюджета</li>
+          </ul>
         </div>
 
         <div class="benefits__block">
           <p>Содействие в трудоустройстве</p>
 
-          <button>+</button>
+          <button class="benefits__toggle js-benefits__toggle">
+            <img src="./assets/icons/double-down.svg" alt="Раскрыть" />
+          </button>
+        </div>
+        <div class="benefits__content js-benefits__content">
+          <ul>
+            <li>Сотрудничество с индустриальными партнерами и организация практики в крупных российских компаниях обеспечивает возможность  содействия в трудоустройстве выпускникам с хорошей успеваемостью в период обучения.</li>
+          </ul>
         </div>
 
         <div class="benefits__block">
           <p>Высококвалифицированный профессорско-преподавательский состав</p>
 
-          <button>+</button>
+          <button class="benefits__toggle js-benefits__toggle">
+            <img src="./assets/icons/double-down.svg" alt="Раскрыть" />
+          </button>
+        </div>
+        <div class="benefits__content js-benefits__content">
+          <ul>
+            <li>Преподаватели кафедры - кандидаты и доктора экономических, педагогических, технических наук, в т.ч. специалисты, имеющие многолетний опыт работы в ведущих научно-образовательных организациях и вузах России (ФИЦ "Информатики и управления" РАН, МИФИ, НИУ ВШЭ и др.) и практики из компаний, входящих в Госкорпорацию "Ростех", в т.ч. АО «Научно-исследовательский институт автоматической аппаратуры имени академика В. С. Семенихина», АО "Системы управления" и др.</li>
+          </ul>
         </div>
 
         <div class="benefits__block">
           <p>Возможность совмещения учёбы и работы </p>
 
-          <button>+</button>
+          
+          <button class="benefits__toggle js-benefits__toggle">
+            <img src="./assets/icons/double-down.svg" alt="Раскрыть" />
+          </button>
         </div>
+        <div class="benefits__content js-benefits__content">
+          <ul>
+            <li>Занятия в будни с 18:00 - 21:00 и в субботу в дневное время
+          </ul>
+        </div>
+        
 
         <div class="benefits__block">
           <p>Активное участие во внеучебной жизни кафедры</p>
 
-          <button>+</button>
+          <button class="benefits__toggle js-benefits__toggle">
+            <img src="./assets/icons/double-down.svg" alt="Раскрыть" />
+          </button>
+        </div>
+        <div class="benefits__content js-benefits__content">
+          <ul>
+            <li>Кафедра математического моделирования и информационных технологий ВШУ регулярно организует для студентов мероприятия:</li>
+
+            <li>проводит экскурсии в ведущие российские компании для знакомства с корпоративной культурой, условиями стажировок и карьерного развития
+              Среди таких компаний: Сбер, Альфа-банк, Ozon, VK, МТС digital, Авито Tech, Б1, Дом.РФ</li>
+
+              <li>организует лекции и мастер-классы от практиков</li>
+              <li>
+                Science Slam, деловые игры и конференции с участием компаний-партнеров и др.</li>
+          </ul>
         </div>
 
       </div>
@@ -365,7 +424,7 @@
       </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" id="partners">
 
       <div class="wrap">
         <h2>ПАРТНЕРЫ И РАБОТОДАТЕЛИ</h2>
@@ -468,7 +527,7 @@
       </div>
     </section>
 
-    <section class="manager">
+    <section class="manager" id="manager">
       <div class="wrap">
         <h2 class="manager__title">РУКОВОДИТЕЛЬ ПРОГРАММЫ</h2>
 
@@ -842,7 +901,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="wrap">
       <div class="footer__container">
 
@@ -854,40 +913,60 @@
               КОНТАКТНАЯ ИНФОРМАЦИЯ
             </h3>
 
-            <p>
+            <a href="tel:+7-999-880-45-67">
               <span>ТЕЛЕФОН:</span>
               8-999-880-45-67
-            </p>
+            </a>
           </div>
 
           <div class="footer__contacts-button">
-            <button>ПРИЕМНАЯ КОМИССИЯ</button>
+            <button>
+              <a href="https://admission.rudn.ru/" target="_blank" rel="noopener noreferrer">ПРИЕМНАЯ КОМИССИЯ</a>
+            </button>
           </div>
 
         </div>
 
-        <div class="footer__address">
-
-          <p>
-            <span>АДРЕС:</span>
-            Москва, ул. Миклухо-Маклая 6, (Главный корпус РУДН, каб. 418)
-          </p>
-
-          <div class="footer__address-container">
-            <div class="footer__address-section">
-              <img src="./assets/icons/RUDN-subway.svg" alt="Иконка московского метро">
-              <p>Университет дружбы народов</p>
-            </div>
-
-          </div>
-
+  <div class="footer__address">
+    <a href="https://yandex.ru/maps/213/moscow/house/ulitsa_miklukho_maklaya_6/Z04Ycg5pSkIFQFtvfXp0c3xiYA==/?ll=37.499372%2C55.652014&amp;z=16" target="_blank" rel="noopener noreferrer"> 
+      <span>АДРЕС:</span>
+      Москва, ул. Миклухо-Маклая 6, (Главный корпус РУДН, каб. 418)
+    </a>
+  
+    <div class="footer__address-group">
+      <div class="footer__address-container">
+        <div class="footer__address-section">
+          <img src="./assets/icons/RUDN-subway.svg" alt="Иконка московского метро">
+          <a href="https://yandex.ru/maps/213/moscow/stops/5971465327/?ll=37.507553%2C55.648238&tab=overview&z=16" target="_blank" rel="noopener noreferrer">Университет дружбы народов</a>
         </div>
-
+        <div class="footer__address-section">
+          <img src="./assets/icons/belyaevo-subway.svg" alt="Иконка московского метро">
+          <a href="https://yandex.ru/maps/213/moscow/stops/station__9858788/?ll=37.525832%2C55.642750&tab=overview&z=16" target="_blank" rel="noopener noreferrer">Беляево</a>
+        </div>
+        <div class="footer__address-section">
+          <img src="./assets/icons/yugo-zapad-subway.svg" alt="Иконка московского метро">
+          <a href="https://yandex.ru/maps/213/moscow/stops/station__9858950/?ll=37.483099%2C55.663633&tab=overview&z=16" target="_blank" rel="noopener noreferrer">Юго-Западная</ф>
+        </div>
+      </div>
+  
+      <div class="footer__link-list">
+        <a href="https://vk.com/rudn_university" target="_blank" rel="noopener noreferrer" >
+          <img src="./assets/icons/VK-rudn.svg" alt="Логотип VK">
+        </a>
+        <a href="https://t.me/s/postupayvrudn" target="_blank" rel="noopener noreferrer" alt="Логотип telegram"></a>
+          <img src="./assets/icons/tg-rudn.svg" 
+        </a>
       </div>
     </div>
+    </div>
+
+    <p class="footer__text" >© 2006-2025 Российский университет дружбы народов им. Патриса Лумумбы</p>
+
+
   </footer>
 
-
+  <script src="./js/burger.js"></script>
+  <script src="./js/open.js"></script>
   <script src="./js/slider.js"></script>
 </body>
 
