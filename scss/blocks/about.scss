@@ -8,14 +8,14 @@
 .about {
   background-color: $legend-plate;
   padding: 4.313rem 0 2.125rem 0;
-  background-image: url(../../assets/images/technologies.png);
-  // background-image: url(#{$base-url}/assets/images/technologies.png);
+  // background-image: url(../../assets/images/technologies.png);
+  background-image: url(#{$base-url}/assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
 
   &__title {
-    font-size: 2.25rem; // было 2.5rem
+    font-size: 2.25rem; 
     font-weight: 600;
     color: $orange;
     margin-bottom: 2.75rem;
@@ -35,23 +35,23 @@
 
     &-head {
       font-family: "Inter", sans-serif;
-      font-size: 1.625rem; // было 1.8rem
+      font-size: 1.625rem; 
       color: $cyan;
     }
 
     &-subtitle {
-      font-size: 2.125rem; // было 2.375rem
+      font-size: 2.125rem; 
       color: $white;
     }
 
     &-title {
-      font-size: 3.5rem; // было 3.875rem
+      font-size: 3.5rem; 
       line-height: 111%;
       color: $white;
     }
 
     &-text {
-      font-size: 1.625rem; // было 1.8rem
+      font-size: 1.625rem; 
       color: $mega-teal;
     }
   }
@@ -88,12 +88,12 @@
 
     &-title {
       font-family: "Inter", sans-serif;
-      font-size: 1.625rem; // было 1.8rem
+      font-size: 1.625rem; 
       color: $cyan;
     }
 
     &-subtitle {
-      font-size: 1.625rem; // было 1.8rem
+      font-size: 1.625rem; 
       color: $orange;
       align-self: center;
       
@@ -106,7 +106,7 @@
 
       &-title {
         font-family: "Inter", sans-serif;
-        font-size: 1.625rem; // было 1.8rem
+        font-size: 1.625rem; 
         color: $cyan;
       }
     }
@@ -138,7 +138,8 @@
 
   .about {
     padding: 2rem 1rem;
-    background-image: url(../../assets/images/technologies.png);
+    // background-image: url(../../assets/images/technologies.png);
+    background-image: url(#{$base-url}/assets/images/technologies.png);
     background-size: contain;
     background-position: right bottom;
     text-align: left;
@@ -242,11 +243,11 @@
 
         &-old,
         &-oldest {
-          font-size: 1.5rem;
+          font-size: 2.1rem;
         }
 
         &-new {
-          font-size: 1.7rem;
+          font-size: 2.9rem;
         }
       }
     }

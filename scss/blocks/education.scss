@@ -1,6 +1,24 @@
 .education {
+  position: relative;
   background: linear-gradient(to bottom, $water-course, $swimmer);
   padding-bottom: 7.438rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 54%;
+    height: 71%;
+    // background-image: url(../../assets/icons/eduaction-line.svg);
+    background-image: url(#{$base-url}/assets/icons/eduaction-line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom, right bottom;
+    z-index: 0;
+  }
+
+
 
   &__container {
     padding: 6.25rem 2.563rem;
