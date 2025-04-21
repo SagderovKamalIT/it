@@ -31,8 +31,8 @@
       font-size: 2rem; 
 
       @media (max-width: 460px) {
-        font-size: 1.75rem;
-        width: 70%;
+        font-size: 2.7rem;
+        width: 85%;
       }
     }
 
@@ -59,12 +59,12 @@
       }
 
       @media (max-width: 460px) {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
 
         img {
-          width: 2.5rem;
-          height: 2.5rem;
+          width: 4.3rem;
+          height: 4.3rem;
         }
       }
     }
@@ -106,7 +106,6 @@
     }
   }
 
-  // Адаптивные улучшения для мобильных устройств
   @media (max-width: 460px) {
     padding-top: 3rem;
 
@@ -118,7 +117,8 @@
     }
 
     &__title {
-      font-size: 2rem;
+      padding: 0 2rem;
+      font-size: 3.2rem;
       margin-bottom: 1.5rem;
     }
 

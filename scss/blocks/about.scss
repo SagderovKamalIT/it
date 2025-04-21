@@ -130,7 +130,6 @@
   }
 }
 
-
 @media (max-width: 460px) {
   .container {
     background-position: center top;
@@ -139,58 +138,90 @@
 
   .about {
     padding: 2rem 1rem;
-    background-size: 100%;
-    background-position: center top;
     background-image: url(../../assets/images/technologies.png);
     background-size: contain;
-    background-position: center top;
+    background-position: right bottom;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     &__title {
       font-size: 3rem;
       margin-bottom: 1.5rem;
+      text-align: center;
     }
 
     &__content {
+      display: flex;
+      flex-direction: column;
       gap: 2.5rem;
     }
 
     &__section {
-      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1.2rem;
+      margin-bottom: 2.5rem;
 
       &-head {
         font-size: 2.3rem;
+        order: 1;
       }
 
       &-subtitle {
         font-size: 2.3rem;
+        order: 2;
       }
 
       &-title {
         font-size: 3.8rem;
         line-height: 1.2;
+        order: 3;
       }
 
       &-text {
         font-size: 2rem;
+        line-height: 1.6;
+        order: 0;
       }
     }
 
     &__info {
-      &-top, &-bottom, &-year {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &-cost {
+        order: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        margin-left: 0;
+      }
+
+      &-top {
+        order: 1;
+        display: flex;
         flex-direction: column;
         gap: 1.5rem;
         margin-bottom: 2rem;
       }
 
-      &-cost {
+      &-bottom {
+        order: 2;
+        display: flex;
         flex-direction: column;
-        gap: 1rem;
-        margin-left: 0;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
       }
 
-      &-item {
-        gap: 0.5rem;
+      &-year {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
       }
 
       &-title,
@@ -205,6 +236,8 @@
       }
 
       &-price {
+        display: flex;
+        flex-wrap: wrap;
         gap: 0.25rem;
 
         &-old,
@@ -218,6 +251,8 @@
       }
     }
   }
+
+  .about__info-title {
+    order: 4;
+  }
 }
-
-

@@ -7,12 +7,6 @@
     display: flex;
     justify-content: space-between;
     gap: 5.625rem;
-
-    @media (max-width: 460px) {
-      flex-direction: column;
-      gap: 1.5rem;
-      padding: 0 1rem;
-    }
   }
 
   &__content {
@@ -27,24 +21,11 @@
       padding: 4.625rem 2.188rem;
       font-size: 3rem;
       text-align: center;
-
-      @media (max-width: 460px) {
-        font-size: 2.2rem;
-        padding: 2rem 1rem;
-        text-align: left;
-      }
     }
 
     &-button {
       @include btn($white, $swimmer, 1.875rem, $white, 1.75rem, 0.96875rem, 6.4375rem, 0.96875rem, 6.4375rem);
       white-space: nowrap;
-
-      @media (max-width: 460px) {
-        width: 100%;
-        font-size: 1.6rem;
-        padding: 1.5rem;
-        margin-top: 1.5rem;
-      }
     }
   }
 
@@ -56,21 +37,12 @@
 
     &-section {
       padding: 1.813rem 3.125rem 1.813rem 6.563rem;
-
-      @media (max-width: 460px) {
-        padding: 1rem 1.5rem;
-      }
     }
 
     &-title {
       font-size: 2.25rem;
       color: $orange;
       margin-bottom: 0.3rem;
-
-      @media (max-width: 460px) {
-        font-size: 2rem;
-        text-align: left;
-      }
     }
 
     &-paragraph {
@@ -78,11 +50,6 @@
       font-size: 2.25rem;
       color: $black;
       margin-bottom: 2rem;
-
-      @media (max-width: 460px) {
-        font-size: 1.7rem;
-        margin-bottom: 1.5rem;
-      }
     }
 
     &-subtitle {
@@ -90,63 +57,68 @@
       text-align: end;
       font-size: 1.875rem;
       font-weight: 600;
-
-      @media (max-width: 460px) {
-        font-size: 1.6rem;
-        text-align: left;
-      }
     }
   }
+}
 
+@media (max-width: 460px) {
+  .career {
+    padding: 7rem 0;
+  }
 
-  @media (max-width: 460px) {
-    padding: 2rem 1rem;
+  .career__section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
 
-    &__section {
-      flex-direction: column;
-      gap: 2rem;
-      padding: 0;
-    }
+  .career__content {
+    gap: 2rem;
+    padding: 0 1rem;
+    align-items: flex-start;
+  }
 
-    &__content {
-      gap: 1.5rem;
-      padding: 0 1rem;
+  .career__content-title {
+    font-size: 2.6rem;
+    padding: 1rem 6rem;
+    text-align: left;
+    line-height: 1.4;
+  }
 
-      &-title {
-        font-size: 2.2rem;
-        text-align: left;
-      }
+  .career__content-button {
+    width: 100%;
+    font-size: 2.7rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    white-space: normal;
+  }
 
-      &-button {
-        width: 100%;
-        font-size: 1.6rem;
-        padding: 1.5rem;
-        margin-top: 1.5rem;
-      }
-    }
+  .career__text {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
 
-    &__text {
-      gap: 1.5rem;
-      padding: 0 1rem;
+  .career__text-section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
 
-      &-section {
-        padding: 1rem 1.5rem;
-      }
+  .career__text-title {
+    font-size: 3.2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
 
-      &-title {
-        font-size: 2rem;
-        text-align: left;
-      }
+  .career__text-paragraph {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    line-height: 1;
+  }
 
-      &-paragraph {
-        font-size: 1.7rem;
-        margin-bottom: 1.5rem;
-      }
-
-      &-subtitle {
-        font-size: 1.6rem;
-        text-align: left;
-      }
-    }
+  .career__text-subtitle {
+    align-self: flex-end;
+    font-size: 2.2rem;
+    text-align: left;
   }
 }
