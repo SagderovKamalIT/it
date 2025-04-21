@@ -57,12 +57,12 @@
 
 @media (max-width: 460px) {
   .manager {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 
     &__title {
       margin-bottom: 2rem;
-      font-size: 1.75rem;
+      font-size: 3.7rem;
       text-align: center;
     }
 
@@ -72,20 +72,20 @@
       align-items: center;
 
       &-img {
-        width: 16rem;
-        height: 16rem;
+        width: 38rem;
+        height: 38rem;
       }
 
       &-text {
         text-align: center;
 
         h3 {
-          font-size: 1.75rem;
+          font-size: 3.5rem;
           margin-bottom: 1.5rem;
         }
 
         p {
-          font-size: 1.25rem;
+          font-size: 3.25rem;
         }
       }
 
@@ -100,7 +100,8 @@
         }
 
         h4 {
-          margin: 0 0 0.5rem 0;
+          font-size: 3rem;
+          margin-bottom: 1.5rem;
         }
 
         a {
