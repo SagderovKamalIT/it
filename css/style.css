@@ -466,6 +466,7 @@ h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    order: 1;
   }
   .about__content {
     display: flex;
@@ -484,7 +485,7 @@ h2 {
   }
   .about__section-subtitle {
     font-size: 2.3rem;
-    order: 2;
+    order: 1;
   }
   .about__section-title {
     font-size: 3.8rem;
@@ -504,7 +505,7 @@ h2 {
   .about__info-cost {
     order: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 1rem;
     margin-left: 0;
   }
@@ -534,6 +535,7 @@ h2 {
     text-align: left;
   }
   .about__info-subtitle {
+    order: 1;
     align-self: flex-start;
   }
   .about__info-price {
@@ -547,8 +549,19 @@ h2 {
   .about__info-price-new {
     font-size: 2.9rem;
   }
+  .about__info-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__info-subtitle {
+    order: 1;
+  }
   .about__info-title {
-    order: 4;
+    order: -1;
+  }
+  .info__title {
+    order: 0;
+    margin-right: 2rem;
   }
 }
 .career {
@@ -628,7 +641,7 @@ h2 {
   .career__content-title {
     font-size: 2.6rem;
     padding: 1rem 6rem;
-    text-align: left;
+    text-align: center;
     line-height: 1.4;
   }
   .career__content-button {
