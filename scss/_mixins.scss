@@ -6,7 +6,7 @@
 }
 
 @mixin btn($bd-color, $bg-color, $bdrs, $color, $font-size, $p-top, $p-right, $p-bottom,$p-left) { 
-  border: 4px solid $bd-color;
+  border: 0.25rem solid $bd-color;
   background-color: $bg-color;
   border-radius: $bdrs;
   color: $color;

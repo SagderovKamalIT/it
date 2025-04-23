@@ -29,7 +29,7 @@
     }
 
     &-line {
-      border-bottom: 4px solid $water-course;
+      border-bottom: 0.25rem solid $water-course;
     }
 
     &-text {
@@ -94,11 +94,12 @@
 
     &__text {
       padding-left: 1rem;
-      padding-right: 1rem;
+      padding-right: 4rem;
 
       &-section {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+       
 
         
       }

@@ -112,7 +112,7 @@ h2 {
 }
 
 .wrapper {
-  border: 4px solid #18cbed;
+  border: 0.25rem solid #18cbed;
   border-radius: 1.875rem;
   background: #FFFFFF;
 }
@@ -147,7 +147,7 @@ h2 {
     padding: 0 2rem;
   }
   .wrapper {
-    border: 2px solid #18cbed;
+    border: 0.125rem solid #18cbed;
   }
 }
 .intro {
@@ -177,7 +177,7 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 28.625rem;
+  width: 33.625rem;
   height: 26.813rem;
   background: linear-gradient(to bottom, #FFFFFF, #087BAB);
   padding: 2.313rem;
@@ -201,21 +201,26 @@ h2 {
   margin-bottom: 0;
 }
 .header__burger-list li a {
+  padding: 1rem;
   font-family: "Inter", sans-serif;
   font-size: 1.7rem;
   color: white;
   text-decoration: none;
 }
 .header__burger-list li a:hover {
-  text-decoration: underline;
+  border: 1px solid #FFFFFF;
+  padding: 1rem;
+  border-radius: 1.875rem;
+  margin-bottom: 1rem;
 }
 .header__right {
   display: flex;
   align-items: center;
   gap: 1.8rem;
+  font-style: "Russo One", sans-serif;
 }
 .header__btn-enroll {
-  border: 4px solid #FFFFFF;
+  border: 0.25rem solid #FFFFFF;
   background-color: #FF7002;
   border-radius: 1.875rem;
   color: #FFFFFF;
@@ -223,6 +228,13 @@ h2 {
   padding: 0.96875rem 6.4375rem 0.96875rem 6.4375rem;
   cursor: pointer;
   white-space: nowrap;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+.header__btn-enroll:hover {
+  color: #FF7002;
+  background-color: #FFFFFF;
+  border: 4px solid #FF7002;
 }
 .header__link {
   position: relative;
@@ -233,6 +245,9 @@ h2 {
 .header__link-img {
   width: 4.0625rem;
   height: 4.0625rem;
+}
+.header__link-img:hover {
+  color: black;
 }
 
 .burger__open {
@@ -284,15 +299,19 @@ h2 {
     gap: 1rem;
   }
   .header__btn-enroll {
-    font-size: 3rem;
+    display: none;
+    /*
+    font-size: 3rem; 
     padding: 0.625rem 1.25rem;
     border-radius: 1rem;
-    border: 2px solid #FFFFFF;
+    border: 2px solid $white;
     width: auto;
     min-width: 10rem;
     white-space: nowrap;
+    */
   }
   .header__link {
+    align-self: flex-end;
     gap: 0.75rem;
   }
   .header__link-img {
@@ -320,8 +339,8 @@ h2 {
     margin-bottom: 1.75rem;
   }
   .header__burger-list li a {
-    font-size: 4.375rem;
-    line-height: 1.5;
+    font-size: 3.375rem;
+    line-height: 1.2;
     color: #054B71;
   }
   .header__burger-close {
@@ -330,24 +349,17 @@ h2 {
     right: 1rem;
   }
   .header__burger-close img {
-    width: 11rem;
+    width: 7rem;
     height: 10rem;
   }
   .burger__open {
     display: block !important;
   }
 }
-.container {
-  background-image: url(../../assets/images/shadow.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
 .about {
   background-color: #020D23;
   padding: 4.313rem 0 2.125rem 0;
-  background-image: url(/managment-in-IT/assets/images/technologies.png);
+  background-image: url(../../assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
@@ -454,9 +466,9 @@ h2 {
   }
   .about {
     padding: 2rem 1rem;
-    background-image: url(/managment-in-IT/assets/images/technologies.png);
+    background-image: url(../../assets/images/technologies.png);
     background-size: contain;
-    background-position: right bottom;
+    background-position: bottom 30% right 1%;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -464,20 +476,20 @@ h2 {
   }
   .about__title {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    margin-bottom: 0.5rem;
+    text-align: left;
     order: 1;
   }
   .about__content {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 0;
   }
   .about__section {
     display: flex;
     flex-direction: column-reverse;
     gap: 1.2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
   }
   .about__section-head {
     font-size: 2.3rem;
@@ -486,6 +498,7 @@ h2 {
   .about__section-subtitle {
     font-size: 2.3rem;
     order: 1;
+    margin-bottom: 2.5rem;
   }
   .about__section-title {
     font-size: 3.8rem;
@@ -505,22 +518,23 @@ h2 {
   .about__info-cost {
     order: 0;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 2.5rem;
     margin-left: 0;
   }
   .about__info-top {
+    position: relative;
     order: 1;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 45rem;
   }
   .about__info-bottom {
     order: 2;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.5rem;
     margin-bottom: 2rem;
   }
   .about__info-year {
@@ -544,10 +558,10 @@ h2 {
     gap: 0.25rem;
   }
   .about__info-price-old, .about__info-price-oldest {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
   .about__info-price-new {
-    font-size: 2.9rem;
+    font-size: 2.2rem;
   }
   .about__info-item {
     display: flex;
@@ -588,7 +602,7 @@ h2 {
   text-align: center;
 }
 .career__content-button {
-  border: 4px solid #FFFFFF;
+  border: 0.25rem solid #FFFFFF;
   background-color: #087BAB;
   border-radius: 1.875rem;
   color: #FFFFFF;
@@ -596,6 +610,12 @@ h2 {
   padding: 0.96875rem 6.4375rem 0.96875rem 6.4375rem;
   cursor: pointer;
   white-space: nowrap;
+  font-family: inherit;
+}
+.career__content-button:hover {
+  color: #087BAB;
+  background-color: #FFFFFF;
+  border: 0.25rem solid #087BAB;
 }
 .career__text {
   display: flex;
@@ -636,6 +656,7 @@ h2 {
   .career__content {
     gap: 2rem;
     padding: 0 1rem;
+    flex-direction: row;
     align-items: flex-start;
   }
   .career__content-title {
@@ -702,7 +723,7 @@ h2 {
   margin-bottom: 0.5rem;
 }
 .education__container-line {
-  border-bottom: 4px solid #054B71;
+  border-bottom: 0.25rem solid #054B71;
 }
 .education__container-text {
   font-size: 2.625rem;
@@ -762,11 +783,11 @@ h2 {
   }
   .education__text {
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 4rem;
   }
   .education__text-section {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .education__text p {
     font-size: 2.7rem;
@@ -792,7 +813,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 4px solid #FF7002;
+  border-bottom: 0.25rem solid #FF7002;
 }
 .benefits__block p {
   width: 80%;
@@ -1018,7 +1039,7 @@ h2 {
   font-size: 2.25rem;
   text-align: center;
   padding: 3rem;
-  border: 4px solid #FF7002;
+  border: 0.25rem solid #FF7002;
   border-radius: 1.875rem;
   display: flex;
   justify-content: center;
@@ -1028,20 +1049,24 @@ h2 {
 @media (max-width: 460px) {
   .outlook .outlook {
     padding-bottom: 5rem;
+    padding-top: 0;
   }
-  .outlook h2 {
+  .outlook .outlook h2 {
     font-size: 3.7rem;
     margin-bottom: 1.5rem;
   }
-  .outlook__container {
+  .outlook .outlook__container {
     gap: 1rem;
   }
-  .outlook__container p {
+  .outlook .outlook__container p {
     font-size: 2.7rem;
   }
-  .outlook__container .outlook-wrapper {
+  .outlook .outlook__container {
     font-size: 1.5rem;
-    padding: 1.5rem;
+    grid-template-columns: none;
+  }
+  .outlook .outlook__container-wrapper {
+    padding: 5rem;
   }
 }
 
@@ -1200,24 +1225,22 @@ h2 {
     width: 38rem;
     height: 38rem;
   }
-  .manager__container-text {
-    text-align: center;
-  }
   .manager__container-text h3 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
   .manager__container-text p {
     font-size: 3.25rem;
   }
   .manager__container-contacts {
-    align-items: center;
+    align-items: left;
   }
   .manager__container-contacts li {
     font-size: 1.25rem;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
   }
   .manager__container-contacts h4 {
     font-size: 3rem;
@@ -1302,8 +1325,8 @@ h2 {
     font-size: 2.8rem;
   }
   .professors-wrapper {
-    border-width: 4px;
-    border-radius: 1rem;
+    border-width: 0.5rem;
+    border-radius: 2rem;
   }
 }
 .admission {
@@ -1418,7 +1441,7 @@ h2 {
   padding-right: 1rem;
 }
 .footer__contacts-button button {
-  border: 4px solid #FFFFFF;
+  border: 0.25rem solid #FFFFFF;
   background-color: #FFFFFF;
   border-radius: 1.875rem;
   color: #054B71;
@@ -1514,11 +1537,12 @@ h2 {
   .footer__container {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
   }
   .footer__contacts {
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 3rem;
   }
   .footer__contacts-text {
     font-size: 3.1rem;
@@ -1540,7 +1564,7 @@ h2 {
   .footer__address-group {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 0.5rem;
   }
   .footer__address-container {
     flex-direction: column;
@@ -1553,24 +1577,25 @@ h2 {
     gap: 0.75rem;
   }
   .footer__address-section img {
-    width: 6rem;
-    height: 6.5rem;
+    width: 4rem;
+    height: 4.5rem;
   }
   .footer__address-section a {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   .footer__link-list {
     justify-content: flex-start;
     gap: 0.75rem;
   }
   .footer__link-list img {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
   }
   .footer__text {
     font-size: 2.3rem;
     text-align: center;
     opacity: 0.7;
+    margin-bottom: 3rem;
   }
 }
 
