@@ -466,7 +466,7 @@ h2 {
   }
   .about {
     padding: 2rem 1rem;
-    background-image: url(../../assets/images/technologies.png);
+    background-image: url(/managment-in-IT/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 30% right 1%;
     text-align: left;
@@ -1595,7 +1595,7 @@ h2 {
     font-size: 2.3rem;
     text-align: center;
     opacity: 0.7;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 }
 

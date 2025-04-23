@@ -131,8 +131,8 @@
 
   .about {
     padding: 2rem 1rem;
-    background-image: url(../../assets/images/technologies.png);
-    // background-image: url(#{$base-url}/assets/images/technologies.png);
+    // background-image: url(../../assets/images/technologies.png);
+    background-image: url(#{$base-url}/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 30% right 1%;
     text-align: left;
