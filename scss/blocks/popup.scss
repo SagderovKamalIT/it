@@ -1,0 +1,113 @@
+.popup {
+  font-family: "Russo One", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+
+    .body_fixed {
+      overflow: hidden;
+  }
+
+  &__wrap {
+    padding: 0 2rem;
+  }
+
+  &_open {
+      opacity: 1;
+      visibility: visible;
+  
+  }
+
+  &__close-btn {
+    position: absolute;
+    // background-image: url(../../assets/icons/Close.svg);
+    background-image: url(#{$base-url}/icons/Close.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  &__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.375rem;
+    margin: 0 auto;
+    width: 58.563rem;
+    padding: 5rem 7.063rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 0.625rem;
+    background: linear-gradient(to bottom, $white, $cyan);
+  }
+
+  h3 {
+    font-size: 2.375rem;
+    color: $water-course;
+    box-sizing: border-box;
+    text-align: center;
+
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap:  2.375rem;
+  }
+
+  .order__input,
+  .order__btn {
+    color: $white;
+    font-family: inherit;
+    border-radius: 1.875rem;
+    border: none;
+    font-size: 2rem;
+  }
+  
+  .order__input {
+    background: linear-gradient(to right, $water-course, $mega-teal);
+    padding: 1.781rem 2.563rem;
+    outline: none;
+    color: rgba(243, 246, 249);
+  }
+
+  .order__btn {
+    padding: 1.781rem 5.875rem;
+    font-family: inherit;
+    background-color: $orange;
+    width: 80%;
+    align-self: center;
+    
+  }
+
+  .order__btn:hover {
+    background-color: $white;
+    color: $orange;
+  }
+
+  
+}
+
+@media (max-width: 460px) {
+  .popup {
+    margin: 0 auto;
+
+    &__wrap {
+      padding: 0;
+    }
+  }
+}

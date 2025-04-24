@@ -300,15 +300,6 @@ h2 {
   }
   .header__btn-enroll {
     display: none;
-    /*
-    font-size: 3rem; 
-    padding: 0.625rem 1.25rem;
-    border-radius: 1rem;
-    border: 2px solid $white;
-    width: auto;
-    min-width: 10rem;
-    white-space: nowrap;
-    */
   }
   .header__link {
     align-self: flex-end;
@@ -359,7 +350,7 @@ h2 {
 .about {
   background-color: #020D23;
   padding: 4.313rem 0 2.125rem 0;
-  background-image: url(../../assets/images/technologies.png);
+  background-image: url(/managment-in-IT/assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
@@ -1596,6 +1587,101 @@ h2 {
     text-align: center;
     opacity: 0.7;
     margin-bottom: 4rem;
+  }
+}
+.popup {
+  font-family: "Russo One", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.popup .body_fixed {
+  overflow: hidden;
+}
+.popup__wrap {
+  padding: 0 2rem;
+}
+.popup_open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__close-btn {
+  position: absolute;
+  background-image: url(/managment-in-IT/icons/Close.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 4rem;
+  height: 4rem;
+  top: 2rem;
+  right: 2rem;
+}
+.popup__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+  margin: 0 auto;
+  width: 58.563rem;
+  padding: 5rem 7.063rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 0.625rem;
+  background: linear-gradient(to bottom, #FFFFFF, #05c6ea);
+}
+.popup h3 {
+  font-size: 2.375rem;
+  color: #054B71;
+  box-sizing: border-box;
+  text-align: center;
+}
+.popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+}
+.popup .order__input,
+.popup .order__btn {
+  color: #FFFFFF;
+  font-family: inherit;
+  border-radius: 1.875rem;
+  border: none;
+  font-size: 2rem;
+}
+.popup .order__input {
+  background: linear-gradient(to right, #054B71, #18cbed);
+  padding: 1.781rem 2.563rem;
+  outline: none;
+  color: rgb(243, 246, 249);
+}
+.popup .order__btn {
+  padding: 1.781rem 5.875rem;
+  font-family: inherit;
+  background-color: #FF7002;
+  width: 80%;
+  align-self: center;
+}
+.popup .order__btn:hover {
+  background-color: #FFFFFF;
+  color: #FF7002;
+}
+
+@media (max-width: 460px) {
+  .popup {
+    margin: 0 auto;
+  }
+  .popup__wrap {
+    padding: 0;
   }
 }
 
