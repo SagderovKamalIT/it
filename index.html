@@ -213,15 +213,27 @@
                 </h3>
       
           
-                <form class="order__form">
+                <form id="order__form" class="order__form">
       
-                  <input class="order__input " type="text" name="name" placeholder="ФИО">
+
+                  <div class="form__group">
+
+                    <input id="name" class="order__input " type="text" name="name" placeholder="ФИО">
+                    <span class="form__error" data-for="name" ></span>
+                  </div>
       
-                  <input class="order__input " type="tel" name="phone" placeholder="Номер телефона">
+                  <div class="form__group">
+
+                    <input id="phone" class="order__input " type="tel" name="phone" placeholder="Номер телефона">
+                    <span class="form__error" data-for="phone" ></span>
+                  </div>
+
+                  <button class="order__btn">ПОДАТЬ ЗАЯВКУ</button>
+                  <div class="form__send-result"></div>
                 </form>
       
       
-                <button class="order__btn">ПОДАТЬ ЗАЯВКУ</button>
+                
               </div>
       
             </div>
@@ -1005,6 +1017,9 @@
 
   </footer>
 
+ 
+  <script src="./js/inputmask.min.js" ></script>
+  <script src="./js/main.js"></script>
   <script src="./js/burger.js"></script>
   <script src="./js/open.js"></script>
   <script src="./js/popup.js"></script>

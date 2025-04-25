@@ -66,7 +66,7 @@
   form {
     display: flex;
     flex-direction: column;
-    gap:  2.375rem;
+    gap:  1.375rem;
   }
 
   .order__input,
@@ -100,6 +100,19 @@
   }
 
   
+}
+
+.form__error {
+  display: block;
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 460px) {
