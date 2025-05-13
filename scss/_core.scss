@@ -80,8 +80,12 @@ h2 {
 }
 
 @media (max-width: 460px) {
+
+  html {
+    font-size: 50%;
+  }
   .wrap {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 
   .wrapper {
@@ -89,5 +93,11 @@ h2 {
   }
 }
 
+
+@media (max-width: 380px) {
+  html {
+    font-size: 45%;
+  }
+}
 
 

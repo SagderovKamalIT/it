@@ -53,6 +53,12 @@
     display: flex;
     flex-direction: column;
 
+    &-mobile-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 6rem;
+    }
+
     &-top {
       display: flex;
       flex-direction: row;
@@ -69,6 +75,11 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
+      &-mobile {
+        display: none;
+      }
+
   
     }
 
@@ -130,21 +141,22 @@
   }
 
   .about {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0 1rem;
     // background-image: url(../../assets/images/technologies.png);
     background-image: url(#{$base-url}/assets/images/technologies.png);
     background-size: contain;
-    background-position: bottom 30% right 1%;
+    background-position: bottom 23% right 1%;
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
     &__title {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-align: left;
-      order: 1;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 3.5rem;
+        text-align: left;
+        order: 1;
     }
 
     &__content {
@@ -156,23 +168,25 @@
     &__section {
       display: flex;
       flex-direction: column-reverse;
-      gap: 1.2rem;
+      gap: 2.5rem;
       margin-bottom: 0.5rem;
+
 
       
       &-head {
-        font-size: 2.3rem;
+        font-size: 2rem;
+        font-weight: 400;
         order: 1;
       }
 
       &-subtitle {
-        font-size: 2.3rem;
+        font-size: 2.7rem;
         order: 1;
         margin-bottom: 2.5rem;
       }
 
       &-title {
-        font-size: 3.8rem;
+        font-size: 3rem;
         line-height: 1.2;
         order: 3;
       }
@@ -182,18 +196,36 @@
         line-height: 1.6;
         order: 0;
       }
+
+      &-repeat {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 0.5rem;
+      }
+
+      &-second {
+      margin-bottom: 35rem;
+      }
     }
 
     &__info {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 0;
+
+      &-mobile-wrap {
+        gap: 1rem;
+        align-items: center;
+        align-self: center;
+        
+      }
 
       &-cost {
         order: 0;
         display: flex;
-        flex-direction: row;
-        gap: 2.5rem;
+        flex-direction: column;
+        gap: 1.3rem;
         margin-left: 0;
 
       
@@ -203,9 +235,9 @@
         position: relative;
         order: 1;
         display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        margin-bottom: 45rem;
+        gap: 3rem;
+        align-self: center;
+        margin-bottom: 3rem;
       }
 
       &-bottom {
@@ -213,21 +245,23 @@
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
       }
+
 
       &-year {
         order: 3;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
+        padding: 0 1rem;
       }
 
       &-title,
       &-subtitle,
       &-year-title {
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-align: left;
       }
 
@@ -243,11 +277,11 @@
 
         &-old,
         &-oldest {
-          font-size: 1.9rem;
+          font-size: 1.2rem;
         }
 
         &-new {
-          font-size: 2.2rem;
+          font-size: 1.4rem;
         }
       }
     }
@@ -255,20 +289,31 @@
 
   .about__info-item {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    &-dekstop {
+      display: none;
+    }
+
+    &-mobile {
+
+    }
   }
 
   .about__info-subtitle {
     order: 1;
+    align-self: center;
   }
 
   .about__info-title {
     order: -1;
+    align-self: center;
   }
 
   .info__title {
     order: 0;
-    margin-right: 2rem;
   }
 
 }

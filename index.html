@@ -16,7 +16,11 @@
     <div class="wrap">
       <header class="header">
         <a class="header__logo" href="https://www.rudn.ru/" target="_blank" rel="noopener noreferrer" >
-          <img src="./assets/icons/rudn-logo.svg" alt="Логотип 'РУДН'">
+          <picture>
+            <source media="(max-width: 460px)" srcset="./assets/icons/rudn-logo-mobile.svg">
+
+            <img src="./assets/icons/rudn-logo.svg" alt="Логотип 'РУДН'">
+          </picture>
         </a>
 
         <div class="header__right">
@@ -70,12 +74,12 @@
           </h2>
 
           <div class="about__content">
-            <div class="about__section">
+            <div class="about__section  about__section-repeat">
               <h3 class="about__section-head">НАПРАВЛЕНИЕ</h3>
               <h2 class="about__section-subtitle">УПРАВЛЕНИЕ В ТЕХНИЧЕСКИХ СИСТЕМАХ</h2>
             </div>
 
-            <div class="about__section">
+            <div class="about__section about__section-second">
               <h1 class="about__section-title">Разработка и управление <br>
                 информационными (ИТ) <br>
                 системами</h1>
@@ -96,36 +100,43 @@
                 <h3 class="about__info-subtitle">2 ГОДА</h3>
               </div>
 
+               <div class="about__info-item about__info-item-mobile">
+                <h2 class="about__info-title">ФОРМА ОБУЧЕНИЯ</h2>
+                <h3 class="about__info-subtitle">ОЧНАЯ</h3>
+              </div>
+
             </div>
 
             <div class="about__info-bottom">
 
-              <div class="about__info-item">
+              <div class="about__info-item about__info-item-dekstop">
                 <h2 class="about__info-title">ФОРМА ОБУЧЕНИЯ</h2>
                 <h3 class="about__info-subtitle">ОЧНАЯ</h3>
               </div>
 
               <div class="about__info-cost">
                 <h2 class="about__info-title">СТОИМОСТЬ ОБУЧЕНИЯ</h2>
-
-                <div class="about__info-year info__year-first">
-                  <h3 class="about__info-year-title">1-й год</h3>
-                  <div class="about__info-price">
-                    <h3 class="about__info-price-old">374 000 РУБ.</h3>
-                    <h2 class="about__info-price-new">260 000 РУБ.</h2>
-
-
+<div class="about__info-mobile-wrap">
+  
+                  <div class="about__info-year info__year-first">
+                    <h3 class="about__info-year-title">1-й год</h3>
+                    <div class="about__info-price">
+                      <h3 class="about__info-price-old">374 000 РУБ.</h3>
+                      <h2 class="about__info-price-new">260 000 РУБ.</h2>
+  
+  
+                    </div>
                   </div>
-                </div>
-
-                <div class="about__info-year info__year-second">
-                  <h3 class="about__info-year-title">2-й год</h3>
-                  <div class="about__info-price">
-                    <h3 class="about__info-price-old">374 000 РУБ.</h3>
-                    <h2 class="about__info-price-new">338 000 РУБ.</h2>
-
+  
+                  <div class="about__info-year info__year-second">
+                    <h3 class="about__info-year-title">2-й год</h3>
+                    <div class="about__info-price">
+                      <h3 class="about__info-price-old">374 000 РУБ.</h3>
+                      <h2 class="about__info-price-new">338 000 РУБ.</h2>
+  
+                    </div>
                   </div>
-                </div>
+</div>
               </div>
 
             </div>
