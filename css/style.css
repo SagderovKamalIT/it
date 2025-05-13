@@ -147,13 +147,14 @@ h2 {
     font-size: 50%;
   }
   .wrap {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
   .wrapper {
     border: 0.125rem solid #18cbed;
+    border-radius: 3.5rem;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   html {
     font-size: 45%;
   }
@@ -699,27 +700,27 @@ h2 {
     border-radius: 10rem;
   }
   .career__text {
-    gap: 2rem;
+    gap: 1rem;
     padding: 0 1rem;
   }
   .career__text-section {
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 1.3rem 4.5rem;
   }
   .career__text-title {
-    font-size: 3.2rem;
+    font-size: 1.7rem;
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
   .career__text-paragraph {
-    font-size: 2.8rem;
+    font-size: 1.7rem;
     margin-bottom: 3rem;
     line-height: 1;
   }
   .career__text-subtitle {
     align-self: flex-end;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     text-align: left;
   }
 }
@@ -771,8 +772,8 @@ h2 {
 }
 @media (max-width: 460px) {
   .education__text {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 }
 .education__text-section {
@@ -797,27 +798,31 @@ h2 {
   }
 }
 @media (max-width: 460px) {
-  .education {
-    padding-bottom: 4rem;
+  .education .education {
+    padding: 0 1rem 4rem 1rem;
   }
-  .education__container {
-    padding: 3rem 1rem;
+  .education .education__container {
+    padding: 1.3rem 0rem;
   }
-  .education__container h2 {
+  .education .education__container h2 {
+    font-size: 1.7rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    text-align: center;
   }
-  .education__text {
-    padding-left: 1rem;
-    padding-right: 4rem;
+  .education .education__container-line:nth-last-child:last-child {
+    border-bottom: none;
   }
-  .education__text-section {
+  .education .education__text {
+    text-align: center;
+  }
+  .education .education__text-section {
     flex-direction: row;
     justify-content: space-between;
   }
-  .education__text p {
-    font-size: 2.7rem;
-    margin: 1.8rem 0;
+  .education .education__text p {
+    font-size: 1.7rem;
+    margin: 0.7rem 0;
   }
 }
 

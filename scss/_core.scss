@@ -85,16 +85,17 @@ h2 {
     font-size: 50%;
   }
   .wrap {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 
   .wrapper {
     border: 0.125rem solid #18cbed;
+    border-radius: 3.5rem;
   }
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   html {
     font-size: 45%;
   }
