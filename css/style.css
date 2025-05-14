@@ -742,85 +742,96 @@ h2 {
   background-position: left bottom, right bottom;
   z-index: 0;
 }
-.education__container {
-  padding: 6.25rem 2.563rem;
-  margin-bottom: 2.813rem;
-}
-.education__container-title {
-  margin-bottom: 0.5rem;
-}
-.education__container-line {
-  border-bottom: 0.25rem solid #054B71;
-}
-.education__container-text {
-  font-size: 2.625rem;
-  color: #FFFFFF;
-  padding: 0 7rem;
-}
 @media (max-width: 460px) {
+  .education .education {
+    padding: 0 1rem 4rem 1rem;
+  }
+  .education__container {
+    padding: 6.25rem 2.563rem;
+    margin-bottom: 2.813rem;
+  }
+  .education__container-title {
+    margin-bottom: 0.5rem;
+  }
+  .education__container-line {
+    border-bottom: 0.25rem solid #054B71;
+  }
   .education__container-text {
-    font-size: 3rem;
+    font-size: 2.625rem;
+    color: #FFFFFF;
+    padding: 0 7rem;
+  }
+}
+@media (max-width: 460px) and (max-width: 460px) {
+  .education__container-text {
+    font-size: 2rem;
     padding: 0 2rem;
   }
 }
-.education__container-info {
-  margin-bottom: 4rem;
-}
-.education__text {
-  padding-left: 4.063rem;
-  padding-right: 9rem;
-}
 @media (max-width: 460px) {
+  .education__container-info {
+    margin-bottom: 3rem;
+  }
+  .education__text {
+    padding-left: 4.063rem;
+    padding-right: 9rem;
+  }
+}
+@media (max-width: 460px) and (max-width: 460px) {
   .education__text {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
 }
-.education__text-section {
-  display: flex;
-  justify-content: space-between;
-}
 @media (max-width: 460px) {
+  .education__text-section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 460px) and (max-width: 460px) {
   .education__text-section {
     flex-direction: column;
     gap: 1.5rem;
   }
 }
-.education__text p {
-  font-size: 2.25rem;
-  font-family: "Inter", sans-serif;
-  margin: 3.5rem 0;
-}
 @media (max-width: 460px) {
+  .education__text p {
+    font-size: 2.25rem;
+    font-family: "Inter", sans-serif;
+    margin: 3.5rem 0;
+  }
+}
+@media (max-width: 460px) and (max-width: 460px) {
   .education__text p {
     font-size: 1.7rem;
     margin: 1.5rem 0;
   }
 }
-@media (max-width: 460px) {
-  .education .education {
+@media (max-width: 460px) and (max-width: 460px) {
+  .education {
     padding: 0 1rem 4rem 1rem;
   }
-  .education .education__container {
+  .education__container {
     padding: 1.3rem 0rem;
   }
-  .education .education__container h2 {
+  .education__container h2 {
     font-size: 1.7rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
   }
-  .education .education__container-line:nth-last-child:last-child {
+  .education__container-line:nth-last-child:last-child {
     border-bottom: none;
   }
-  .education .education__text {
+  .education__text {
     text-align: center;
   }
-  .education .education__text-section {
+  .education__text-section {
     flex-direction: row;
     justify-content: space-between;
   }
-  .education .education__text p {
+  .education__text p {
     font-size: 1.7rem;
     margin: 0.7rem 0;
   }
@@ -902,8 +913,9 @@ h2 {
   }
   .benefits__title {
     padding: 0 2rem;
-    font-size: 3.7rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    text-align: center;
   }
   .benefits__block {
     padding: 1.5rem 2rem;
@@ -912,7 +924,7 @@ h2 {
     gap: 1rem;
   }
   .benefits__block p {
-    font-size: 3.3rem;
+    font-size: 2.3rem;
     width: 85%;
   }
   .benefits__block button {
@@ -932,7 +944,7 @@ h2 {
   }
   .benefits__content ul li {
     padding: 0 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     line-height: 4rem;
   }
