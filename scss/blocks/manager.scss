@@ -57,35 +57,36 @@
 
 @media (max-width: 460px) {
   .manager {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 2.7rem;
+    padding-bottom: 1.7rem;
 
     &__title {
-      margin-bottom: 2rem;
-      font-size: 3.7rem;
+      margin-bottom: 1rem;
+      font-size: 2.7rem;
       text-align: center;
     }
 
     &__container {
-      flex-direction: column;
+      flex-direction: row;
       gap: 2rem;
       align-items: center;
 
       &-img {
-        width: 38rem;
-        height: 38rem;
+        width: 16rem;
+        height: 16rem;
       }
 
       &-text {
 
         h3 {
-          font-size: 3.5rem;
-          margin-bottom: 1.5rem;
+          font-size: 1.7rem;
+          margin-bottom: 0.8rem;
           text-align: center;
         }
 
         p {
-          font-size: 3.25rem;
+          font-size: 1.3rem;
+          line-height: 1.6rem;
         }
       }
 
@@ -94,14 +95,16 @@
 
         li {
           font-size: 1.25rem;
-          flex-direction: column;
+          flex-direction: row;
           align-items: left;
           justify-content: left;
+          gap: 0.4rem;
         }
 
         h4 {
-          font-size: 3rem;
-          margin-bottom: 1.5rem;
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+          margin-right: 0;
         }
 
         a {

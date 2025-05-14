@@ -61,22 +61,22 @@
 
 @media (max-width: 460px) {
   .admission {
-    padding-top: 7rem;
+    padding-top: 3rem;
 
     &__title {
-      font-size: 3.7rem;
+      font-size: 2.7rem;
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
     &__list {
       padding-left: 1rem;
-      gap: 2rem;
+      gap: 1.5rem;
 
       &-last {
         flex-direction: column;
         align-items: flex-start;
-        gap: 3rem;
+        gap: 1.5rem;
         padding-left: 1rem;
       }
     }
@@ -85,11 +85,11 @@
       gap: 0.4rem;
 
       &-title {
-        font-size: 3.3rem;
+        font-size: 2.3rem;
       }
 
       &-paragraph {
-        font-size: 2.7rem;
+        font-size: 1.7rem;
       }
 
       &-wrapper {

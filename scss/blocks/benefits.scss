@@ -101,12 +101,12 @@
       }
 
       button {
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
 
         img {
-          width: 4.3rem;
-          height: 4.3rem;
+         width: 2.3rem;
+        height: 2.3rem;
         }
       }
     }
@@ -120,14 +120,14 @@
 
         li {
           padding: 0 2rem;
-          font-size: 2rem;
-          margin-bottom: 1.5rem;
-          line-height: 4rem;
+          font-size: 1.7rem;
+          margin-bottom: 0;
+          line-height: 2rem;
         }
       }
 
       &.active {
-        padding: 1rem 0;
+        padding: 0.8rem 0;
       }
     }
   }

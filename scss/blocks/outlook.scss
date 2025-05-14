@@ -4,6 +4,7 @@
 
   h2 {
     margin-bottom: 2.5rem;
+    font-size: 3rem;
   }
 
   &__container {
@@ -25,36 +26,39 @@
       align-items: center;
     }
   }
+}
 
   @media (max-width: 460px) {
     .outlook {
-      padding-bottom: 5rem;
+      padding-bottom: 2rem;
       padding-top: 0;
 
       h2 {
-        font-size: 3.7rem; 
-        margin-bottom: 1.5rem;
+      font-size: 2.5rem; 
+      margin-bottom: 1.5rem;
+      text-align: center;
       }
     
       &__container {
         gap: 1rem; 
     
         p {
-          font-size: 2.7rem;
+          font-size: 1.5rem;
         }
       }
     
       &__container  {
         font-size: 1.5rem; 
-        grid-template-columns: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
   
         &-wrapper {
-          padding: 5rem;
+          padding: 1.5rem;
         }
       }
   
     }
     
   }
-    }
+
   

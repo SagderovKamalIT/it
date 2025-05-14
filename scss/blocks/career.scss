@@ -27,6 +27,7 @@
       @include btn($white, $swimmer, 1.875rem, $white, 1.75rem, 0.96875rem, 6.4375rem, 0.96875rem, 6.4375rem);
       white-space: nowrap;
       font-family: inherit;
+      text-decoration: none;
     }
 
    &-button:hover {
