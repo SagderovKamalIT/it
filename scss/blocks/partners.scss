@@ -38,6 +38,8 @@
       width: 210px;
       height: auto;
       object-fit: contain;
+      justify-self: center;
+      align-self: center;
 
       @media (max-width: 460px) {
         width: 100px;  

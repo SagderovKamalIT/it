@@ -4,6 +4,7 @@ const sliderItemsNode = document.querySelector('.js-slider-items');
 const sliderItemNodes = document.querySelectorAll('.js-slider-items .studentlife__slider-item');
 
 let currentIndex = 0;
+const intervalTime = 3000; 
 
 function updateSlider() {
   const slideWidth = sliderItemNodes[0].offsetWidth;
@@ -11,18 +12,30 @@ function updateSlider() {
   sliderItemsNode.style.transform = `translateX(${offset}px)`;
 }
 
-leftBtnNode.addEventListener('click', () => {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = sliderItemNodes.length - 1; // переход к последнему
+function nextSlide() {
+  currentIndex++;
+  if (currentIndex >= sliderItemNodes.length) {
+    currentIndex = 0;
   }
   updateSlider();
+}
+
+function prevSlide() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = sliderItemNodes.length - 1;
+  }
+  updateSlider();
+}
+
+const autoSlide = setInterval(nextSlide, intervalTime);
+
+leftBtnNode.addEventListener('click', () => {
+  clearInterval(autoSlide); 
+  prevSlide();
 });
 
 rightBtnNode.addEventListener('click', () => {
-  currentIndex++;
-  if (currentIndex >= sliderItemNodes.length) {
-    currentIndex = 0; // переход к первому
-  }
-  updateSlider();
+  clearInterval(autoSlide); 
+  nextSlide();
 });

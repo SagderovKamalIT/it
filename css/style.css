@@ -151,7 +151,7 @@ h2 {
   }
   .wrapper {
     border: 0.125rem solid #18cbed;
-    border-radius: 3.5rem;
+    border-radius: 2.5rem;
   }
 }
 @media (max-width: 390px) {
@@ -239,6 +239,7 @@ h2 {
   white-space: nowrap;
   font-family: inherit;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .header__btn-enroll:hover {
   color: #FF7002;
@@ -515,7 +516,7 @@ h2 {
     line-height: 1.4;
     border-radius: 10rem;
     right: 0;
-    top: 0;
+    top: 12rem;
   }
   .about__section-btn:hover {
     border: 0.25rem solid #FF7002;
@@ -535,6 +536,7 @@ h2 {
     font-size: 3rem;
     line-height: 1.2;
     order: 3;
+    width: 39rem;
   }
   .about__section-text {
     font-size: 2rem;
@@ -764,78 +766,43 @@ h2 {
   background-position: left bottom, right bottom;
   z-index: 0;
 }
-@media (max-width: 460px) {
-  .education .education {
-    padding: 0 1rem 4rem 1rem;
-  }
-  .education__container {
-    padding: 6.25rem 2.563rem;
-    margin-bottom: 2.813rem;
-  }
-  .education__container-title {
-    margin-bottom: 0.5rem;
-  }
-  .education__container-line {
-    border-bottom: 0.25rem solid #054B71;
-  }
-  .education__container-text {
-    font-size: 2.625rem;
-    color: #FFFFFF;
-    padding: 0 7rem;
-  }
+.education__container {
+  padding: 6.25rem 2.563rem;
+  margin-bottom: 2.813rem;
 }
-@media (max-width: 460px) and (max-width: 460px) {
-  .education__container-text {
-    font-size: 2rem;
-    padding: 0 2rem;
-  }
+.education__container-title {
+  margin-bottom: 0.5rem;
 }
-@media (max-width: 460px) {
-  .education__container-info {
-    margin-bottom: 3rem;
-  }
-  .education__text {
-    padding-left: 4.063rem;
-    padding-right: 9rem;
-  }
+.education__container-line {
+  border-bottom: 0.25rem solid #054B71;
 }
-@media (max-width: 460px) and (max-width: 460px) {
-  .education__text {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
+.education__container-text {
+  font-size: 2.625rem;
+  color: #FFFFFF;
+  padding: 0 7rem;
+}
+.education__container-info {
+  margin-bottom: 3rem;
+}
+.education__text {
+  padding-left: 4.063rem;
+  padding-right: 9rem;
+}
+.education__text-section {
+  display: flex;
+  justify-content: space-between;
+}
+.education__text p {
+  font-size: 2.25rem;
+  font-family: "Inter", sans-serif;
+  margin: 3.5rem 0;
 }
 @media (max-width: 460px) {
-  .education__text-section {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 460px) and (max-width: 460px) {
-  .education__text-section {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-@media (max-width: 460px) {
-  .education__text p {
-    font-size: 2.25rem;
-    font-family: "Inter", sans-serif;
-    margin: 3.5rem 0;
-  }
-}
-@media (max-width: 460px) and (max-width: 460px) {
-  .education__text p {
-    font-size: 1.7rem;
-    margin: 1.5rem 0;
-  }
-}
-@media (max-width: 460px) and (max-width: 460px) {
   .education {
     padding: 0 1rem 4rem 1rem;
   }
   .education__container {
-    padding: 1.3rem 0rem;
+    padding: 1.3rem 0;
   }
   .education__container h2 {
     font-size: 1.7rem;
@@ -843,19 +810,21 @@ h2 {
     padding-right: 1rem;
     text-align: center;
   }
-  .education__container-line:nth-last-child:last-child {
+  .education__container-line:nth-last-child(1) {
     border-bottom: none;
   }
   .education__text {
     text-align: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
   .education__text-section {
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1.5rem;
   }
   .education__text p {
     font-size: 1.7rem;
-    margin: 0.7rem 0;
+    margin: 1.5rem 0;
   }
 }
 
@@ -942,12 +911,13 @@ h2 {
   .benefits__block {
     padding: 1.5rem 2rem;
     font-size: 2rem;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
   .benefits__block p {
     font-size: 2.3rem;
     width: 85%;
+    font-weight: 400;
   }
   .benefits__block button {
     width: 4.5rem;
@@ -1090,6 +1060,8 @@ h2 {
   width: 210px;
   height: auto;
   object-fit: contain;
+  justify-self: center;
+  align-self: center;
 }
 @media (max-width: 460px) {
   .partners__section img {
@@ -1243,8 +1215,7 @@ h2 {
     margin-top: 2rem;
   }
   .studentlife__slider-btn img {
-    width: 1.5rem;
-    height: 1.5rem;
+    display: none;
   }
 }
 

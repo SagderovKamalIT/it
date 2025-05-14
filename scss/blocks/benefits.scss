@@ -92,12 +92,13 @@
     &__block {
       padding: 1.5rem 2rem;
       font-size: 2rem;
-      flex-direction: column;
+      flex-direction: row;
       gap: 1rem;
 
       p {
         font-size: 2.3rem;
         width: 85%;
+        font-weight: 400;
       }
 
       button {

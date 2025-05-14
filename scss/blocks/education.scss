@@ -3,7 +3,6 @@
   background: linear-gradient(to bottom, $water-course, $swimmer);
   padding-bottom: 7.438rem;
 
-
   &::before {
     content: "";
     position: absolute;
@@ -11,17 +10,11 @@
     left: 0;
     width: 54%;
     height: 71%;
-    // background-image: url(../../assets/icons/eduaction-line.svg);
     background-image: url(#{$base-url}/assets/icons/eduaction-line.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom, right bottom;
     z-index: 0;
-  }
-
-  @media (max-width: 460px) {
-     .education {
-    padding: 0 1rem 4rem 1rem;
   }
 
   &__container {
@@ -40,11 +33,6 @@
       font-size: 2.625rem;
       color: $white;
       padding: 0 7rem;
-
-      @media (max-width: 460px) {
-        font-size: 2rem;
-        padding: 0 2rem;
-      }
     }
 
     &-info {
@@ -56,72 +44,52 @@
     padding-left: 4.063rem;
     padding-right: 9rem;
 
-    @media (max-width: 460px) {
-      padding-left: 3.5rem;
-      padding-right: 3.5rem;
-    }
-
     &-section {
       display: flex;
       justify-content: space-between;
-
-      @media (max-width: 460px) {
-        flex-direction: column;
-        gap: 1.5rem;
-      }
     }
 
     p {
       font-size: 2.25rem;
       font-family: "Inter", sans-serif;
       margin: 3.5rem 0;
-
-      @media (max-width: 460px) {
-        font-size: 1.7rem;
-        margin: 1.5rem 0;
-      }
     }
   }
 
-
   @media (max-width: 460px) {
-     padding: 0 1rem 4rem 1rem;
+    padding: 0 1rem 4rem 1rem;
 
     &__container {
-     padding: 1.3rem 0rem;
+      padding: 1.3rem 0;
 
       h2 {
         font-size: 1.7rem;
         padding-left: 1rem;
-      padding-right: 1rem;
-      text-align: center;
+        padding-right: 1rem;
+        text-align: center;
       }
 
       &-line {
-      &:nth-last-child:last-child {
-       border-bottom: none;
-      }
+        &:nth-last-child(1) {
+          border-bottom: none;
+        }
       }
     }
 
     &__text {
       text-align: center;
-
-    
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
 
       &-section {
         flex-direction: row;
-        justify-content: space-between;
-       
+        gap: 1.5rem;
       }
-
-     
 
       p {
         font-size: 1.7rem;
-        margin: 0.7rem 0;
+        margin: 1.5rem 0;
       }
     }
   }
-}
 }
