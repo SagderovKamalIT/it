@@ -19,9 +19,9 @@
   &__section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
+    align-items: center;
 
     @media (max-width: 460px) {
     display: grid;
@@ -40,6 +40,8 @@
       object-fit: contain;
       justify-self: center;
       align-self: center;
+          justify-self: center;
+    align-self: center;
 
       @media (max-width: 460px) {
         width: 100px;  

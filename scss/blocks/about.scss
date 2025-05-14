@@ -298,6 +298,12 @@
         text-align: left;
       }
 
+       &-title {
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+       }
+
       &-subtitle {
         order: 1;
         align-self: flex-start;
