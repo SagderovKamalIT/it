@@ -16,6 +16,22 @@
 
   }
 
+  &::after {
+     position: absolute;
+    content: '';
+    // background: url(../../assets/icons/long-line.svg) no-repeat;
+     background: url(#{$base-url}/assets/icons/long-line.svg) no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    width: 95rem;
+    height: 5rem;
+
+    @media (max-width: 860px) {
+      width: 85rem;
+    }
+
+  }
+
 
   &__section {
     display: flex;
@@ -27,6 +43,7 @@
     background-position: 27rem;
     background-size: contain;
   }
+
 
   &__content {
     display: flex;
@@ -90,10 +107,22 @@
 
 @media (max-width: 460px) {
   .career {
-    padding: 2rem 0;
+    padding: 2rem 0 8rem 0;
 
       &::before {
- display: none;
+      display: none;
+
+  }
+
+    &::after {
+      //  background: url(../../assets/icons/career-line.svg) no-repeat;
+       background: url(#{$base-url}/assets/icons/career-line.svg) no-repeat;
+      background-position: bottom left;
+      background-size: contain;
+      bottom: 0;
+      left: 0;
+      width: 45rem;
+      height: 5.8rem;
   }
 
   }
@@ -121,6 +150,12 @@
     text-align: center;
     line-height: 1.4;
     border-radius: 10rem;
+  }
+
+  .career__content-button:hover {
+    color: #FFFFFF;
+    background-color: #087BAB;
+    border: 0.25rem solid #FFFFFF;
   }
 
 

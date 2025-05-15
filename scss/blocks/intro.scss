@@ -62,7 +62,7 @@
           
 
           &:hover {
-            border: 1px solid $white;
+            border: 0.1rem solid $white;
             padding: 1rem ;
             border-radius: 1.875rem;
             margin-bottom: 1rem;
@@ -94,7 +94,7 @@
   &__btn-enroll:hover {
   color: $orange;
   background-color: $white;
-  border: 4px solid $orange;
+  border: 0.25rem solid $orange;
   }
 
   &__link {
@@ -103,14 +103,17 @@
     align-items: center;
     gap: 1rem;
 
+
     &-img {
       width: 4.0625rem;
       height: 4.0625rem;
+
+      &:hover {
+      transform: scale(1.1); 
     }
 
-    &-img:hover {
-      color: black;
     }
+
   }
 }
 
@@ -180,6 +183,10 @@
       &-img {
         width: 4.5rem;
         height: 6rem;
+
+         &:hover {
+      transform: none;
+    }
       }
     }
 

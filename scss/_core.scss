@@ -10,12 +10,12 @@ html {
 }
 
 .container { 
-  @include min-max(320px, 100%); 
+  @include min-max(280px, 100%); 
 }
 
 
 .wrap {
-  @include min-max(320px, 1660px);
+  @include min-max(280px, 1660px);
   width: 100%;
   padding: 0 3.75rem;
   box-sizing: border-box;

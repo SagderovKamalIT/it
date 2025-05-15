@@ -3,23 +3,36 @@
   background: linear-gradient(to bottom, $water-course, $swimmer);
   padding-bottom: 7.438rem;
 
-  &::before {
-    content: "";
+  &::after {
     position: absolute;
-    bottom: 2rem;
-    left: 0;
-    width: 54%;
-    height: 71%;
-    background-image: url(#{$base-url}/assets/icons/eduaction-line.svg);
-    background-repeat: no-repeat;
+    content: '';
+    // background: url(../../assets/icons/education-long-line.svg) no-repeat;
+      background: url(#{$base-url}/assets/icons/education-long-line.svg) no-repeat;
     background-size: contain;
-    background-position: left bottom, right bottom;
-    z-index: 0;
+    background-position: bottom left;
+    width: 80rem;
+    height: 6rem;
+
   }
 
   &__container {
+    position: relative;
     padding: 6.25rem 2.563rem;
-    margin-bottom: 2.813rem;
+    margin-bottom: 5rem;
+
+    &::after {
+    position: absolute;
+    content: '';
+    // background: url(../../assets/icons/education-vertical-line.svg) no-repeat;
+    background: url(#{$base-url}/assets/icons/education-vertical-line.svg) no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    bottom: -25rem;
+    right: -0.35rem;
+    width: 5.5rem;
+    height: 32rem;
+    
+    }
 
     &-title {
       margin-bottom: 0.5rem;
@@ -32,17 +45,18 @@
     &-text {
       font-size: 2.625rem;
       color: $white;
-      padding: 0 3.5rem;
+      padding: 0 4.5rem;
       text-align: center;
 
       p {
       font-size: 2rem;
       font-weight: 400;
+      margin-bottom: 4rem;
       }
     }
 
     &-info {
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
       font-size: 2rem;
       font-weight: 400;
     }
@@ -69,9 +83,24 @@
     .education {
 
       padding: 0 1rem 4rem 1rem;
+
+        &::after {
+          display: none;
+        }
   
       &__container {
         padding: 1.3rem 0;
+
+        &::after {
+          display: none;
+        }
+
+        &-text {
+          p {
+            margin-bottom: 2rem;
+            font-weight: 300;
+          }
+        }
 
         &-text-mobile {
           padding: 0;

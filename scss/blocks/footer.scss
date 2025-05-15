@@ -38,9 +38,20 @@
         @include btn($white, $white, 1.875rem, $water-course, 2rem, 1.906rem, 3.344rem, 1.906rem, 3.344rem);
         font-family: inherit;
 
+        &:hover {
+           @include btn($white, $water-course, 1.875rem, $white, 2rem, 1.906rem, 3.344rem, 1.906rem, 3.344rem);
+        font-family: inherit;
+        }
+
+
         a {
           color: $water-course;
           text-decoration: none;
+          padding: 3.344rem 1.906rem;
+
+          &:hover {
+             color: $white;
+          }
         }
       }
     }
@@ -56,6 +67,7 @@
       color: $white;
       font-size: 2rem;
       font-family: "Inter", sans-serif;
+
     }
 
     span {
@@ -85,9 +97,14 @@
       gap: 0.875rem;
       align-items: center;
 
+          &:hover {
+      transform: scale(1.1); 
+    }
+
       img {
         width: 2.438rem;
         height: 3rem;
+
       }
 
       a {
@@ -108,6 +125,10 @@
     img {
       width: 4.427rem;
       height: 4.427rem;
+
+       &:hover {
+      transform: scale(1.1); 
+    }
     }
   }
 

@@ -78,14 +78,14 @@ html {
 }
 
 .container {
-  min-width: 320px;
+  min-width: 280px;
   max-width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .wrap {
-  min-width: 320px;
+  min-width: 280px;
   max-width: 1660px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -222,7 +222,7 @@ h2 {
   text-decoration: none;
 }
 .header__burger-list li a:hover {
-  border: 1px solid #FFFFFF;
+  border: 0.1rem solid #FFFFFF;
   padding: 1rem;
   border-radius: 1.875rem;
   margin-bottom: 1rem;
@@ -249,7 +249,7 @@ h2 {
 .header__btn-enroll:hover {
   color: #FF7002;
   background-color: #FFFFFF;
-  border: 4px solid #FF7002;
+  border: 0.25rem solid #FF7002;
 }
 .header__link {
   position: relative;
@@ -262,7 +262,7 @@ h2 {
   height: 4.0625rem;
 }
 .header__link-img:hover {
-  color: black;
+  transform: scale(1.1);
 }
 
 .burger__open {
@@ -323,6 +323,9 @@ h2 {
   .header__link-img {
     width: 4.5rem;
     height: 6rem;
+  }
+  .header__link-img:hover {
+    transform: none;
   }
   .header__burger {
     position: fixed;
@@ -522,9 +525,13 @@ h2 {
     border-radius: 10rem;
     right: 0;
     top: 12rem;
+    z-index: 10;
   }
   .about__section-btn:hover {
-    border: 0.25rem solid #FF7002;
+    color: #FFFFFF;
+    background-color: #FF7002;
+    border: 0.25rem solid #FFFFFF;
+    z-index: 10;
   }
   .about__section-head {
     font-size: 2rem;
@@ -657,6 +664,20 @@ h2 {
   width: 27rem;
   height: 11rem;
 }
+.career::after {
+  position: absolute;
+  content: "";
+  background: url(/managment-in-IT/assets/icons/long-line.svg) no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  width: 95rem;
+  height: 5rem;
+}
+@media (max-width: 860px) {
+  .career::after {
+    width: 85rem;
+  }
+}
 .career__section {
   display: flex;
   justify-content: space-between;
@@ -723,10 +744,19 @@ h2 {
 
 @media (max-width: 460px) {
   .career {
-    padding: 2rem 0;
+    padding: 2rem 0 8rem 0;
   }
   .career::before {
     display: none;
+  }
+  .career::after {
+    background: url(/managment-in-IT/assets/icons/career-line.svg) no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    bottom: 0;
+    left: 0;
+    width: 45rem;
+    height: 5.8rem;
   }
   .career__section {
     flex-direction: column;
@@ -748,6 +778,11 @@ h2 {
     text-align: center;
     line-height: 1.4;
     border-radius: 10rem;
+  }
+  .career__content-button:hover {
+    color: #FFFFFF;
+    background-color: #087BAB;
+    border: 0.25rem solid #FFFFFF;
   }
   .career__text {
     gap: 1rem;
@@ -779,22 +814,30 @@ h2 {
   background: linear-gradient(to bottom, #054B71, #087BAB);
   padding-bottom: 7.438rem;
 }
-.education::before {
-  content: "";
+.education::after {
   position: absolute;
-  bottom: 2rem;
-  left: 0;
-  width: 54%;
-  height: 71%;
-  background-image: url(/managment-in-IT/assets/icons/eduaction-line.svg);
-  background-repeat: no-repeat;
+  content: "";
+  background: url(/managment-in-IT/assets/icons/education-long-line.svg) no-repeat;
   background-size: contain;
-  background-position: left bottom, right bottom;
-  z-index: 0;
+  background-position: bottom left;
+  width: 80rem;
+  height: 6rem;
 }
 .education__container {
+  position: relative;
   padding: 6.25rem 2.563rem;
-  margin-bottom: 2.813rem;
+  margin-bottom: 5rem;
+}
+.education__container::after {
+  position: absolute;
+  content: "";
+  background: url(/managment-in-IT/assets/icons/education-vertical-line.svg) no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  bottom: -25rem;
+  right: -0.35rem;
+  width: 5.5rem;
+  height: 32rem;
 }
 .education__container-title {
   margin-bottom: 0.5rem;
@@ -805,15 +848,16 @@ h2 {
 .education__container-text {
   font-size: 2.625rem;
   color: #FFFFFF;
-  padding: 0 3.5rem;
+  padding: 0 4.5rem;
   text-align: center;
 }
 .education__container-text p {
   font-size: 2rem;
   font-weight: 400;
+  margin-bottom: 4rem;
 }
 .education__container-info {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   font-weight: 400;
 }
@@ -835,8 +879,18 @@ h2 {
   .education {
     padding: 0 1rem 4rem 1rem;
   }
+  .education::after {
+    display: none;
+  }
   .education__container {
     padding: 1.3rem 0;
+  }
+  .education__container::after {
+    display: none;
+  }
+  .education__container-text p {
+    margin-bottom: 2rem;
+    font-weight: 300;
   }
   .education__container-text-mobile {
     padding: 0;
@@ -888,7 +942,7 @@ h2 {
   width: 80%;
   margin: 0;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .benefits__block button {
   background-color: #d9d9d9;
@@ -953,7 +1007,7 @@ h2 {
   .benefits__block p {
     font-size: 2.3rem;
     width: 85%;
-    font-weight: 400;
+    font-weight: 300;
   }
   .benefits__block button {
     width: 4.5rem;
@@ -1081,6 +1135,17 @@ h2 {
   gap: 3rem;
   align-items: center;
 }
+@media (max-width: 860px) {
+  .partners__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    align-self: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+}
 @media (max-width: 460px) {
   .partners__section {
     display: grid;
@@ -1100,6 +1165,11 @@ h2 {
   align-self: center;
   justify-self: center;
   align-self: center;
+}
+@media (max-width: 860px) {
+  .partners__section img {
+    width: 150px;
+  }
 }
 @media (max-width: 460px) {
   .partners__section img {
@@ -1164,7 +1234,7 @@ h2 {
 }
 .studentlife__container {
   padding: 3rem;
-  border: 4px solid #054B71;
+  border: 0.25rem solid #054B71;
 }
 .studentlife__container-title {
   margin-bottom: 2rem;
@@ -1234,13 +1304,13 @@ h2 {
     padding: 0 1rem;
   }
   .studentlife__container h2 {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     text-align: center;
     margin-bottom: 1rem;
   }
   .studentlife__container p {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
   }
   .studentlife__container-span {
     line-height: 2.25rem;
@@ -1358,14 +1428,14 @@ h2 {
 .professors__section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 1.563rem;
 }
 .professors__section-container {
   padding: 1.375rem 1.875rem;
 }
 .professors-wrapper {
-  border: 4px solid #054B71;
+  border: 0.25rem solid #054B71;
   border-radius: 1.875rem;
   background: #FFFFFF;
 }
@@ -1442,9 +1512,20 @@ h2 {
 }
 .admission__list {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 3.14rem;
   padding-left: 5.5rem;
+}
+.admission__list::before {
+  position: absolute;
+  content: "";
+  background: url(/managment-in-IT/assets/icons/admission-vertical-line.svg) no-repeat;
+  background-size: contain;
+  left: 0;
+  top: 0;
+  width: 10rem;
+  height: 89rem;
 }
 .admission__list-last {
   margin-top: 3.14rem;
@@ -1489,14 +1570,20 @@ h2 {
     margin-bottom: 1rem;
   }
   .admission__list {
-    padding-left: 1rem;
+    padding-left: 3rem;
     gap: 1.5rem;
+  }
+  .admission__list::before {
+    width: 5rem;
+    height: 66rem;
+    left: -1rem;
+    top: 0;
   }
   .admission__list-last {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
   }
   .admission__item {
     gap: 0.4rem;
@@ -1553,9 +1640,23 @@ h2 {
   cursor: pointer;
   font-family: inherit;
 }
+.footer__contacts-button button:hover {
+  border: 0.25rem solid #FFFFFF;
+  background-color: #054B71;
+  border-radius: 1.875rem;
+  color: #FFFFFF;
+  font-size: 2rem;
+  padding: 1.906rem 3.344rem 1.906rem 3.344rem;
+  cursor: pointer;
+  font-family: inherit;
+}
 .footer__contacts-button button a {
   color: #054B71;
   text-decoration: none;
+  padding: 3.344rem 1.906rem;
+}
+.footer__contacts-button button a:hover {
+  color: #FFFFFF;
 }
 .footer__address {
   display: flex;
@@ -1592,6 +1693,9 @@ h2 {
   gap: 0.875rem;
   align-items: center;
 }
+.footer__address-section:hover {
+  transform: scale(1.1);
+}
 .footer__address-section img {
   width: 2.438rem;
   height: 3rem;
@@ -1611,6 +1715,9 @@ h2 {
 .footer__link-list img {
   width: 4.427rem;
   height: 4.427rem;
+}
+.footer__link-list img:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .footer__address-group {

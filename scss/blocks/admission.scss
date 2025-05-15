@@ -10,9 +10,23 @@
 
   &__list {
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 3.140rem;
     padding-left: 5.5rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      // background: url(../../assets/icons/admission-vertical-line.svg) no-repeat;
+      background: url(#{$base-url}/assets/icons/admission-vertical-line.svg) no-repeat;
+      background-size: contain;
+      left: 0;
+      top: 0;
+      width: 10rem;
+      height: 89rem;
+
+    }
 
     &-last {
       margin-top: 3.140rem;;
@@ -70,14 +84,21 @@
     }
 
     &__list {
-      padding-left: 1rem;
+      padding-left: 3rem;
       gap: 1.5rem;
+
+      &::before {
+        width: 5rem;
+      height: 66rem;
+      left: -1rem;
+      top: 0;
+      }
 
       &-last {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
-        padding-left: 1rem;
+        padding-left: 3rem;
       }
     }
 

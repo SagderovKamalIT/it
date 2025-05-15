@@ -193,10 +193,14 @@
         border-radius: 10rem;
         right: 0;
         top: 12rem;
+         z-index: 10;
       }
 
       &-btn:hover {
-        border: 0.25rem solid $orange;
+        color: $white;
+        background-color: $orange;
+        border: 0.25rem solid  $white;
+        z-index: 10;
       }
 
 
