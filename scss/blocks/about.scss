@@ -152,7 +152,7 @@
   .about {
     padding: 2rem 1rem 0 1rem;
     // background-image: url(../../assets/images/technologies.png);
-     background-image: url(#{$base-url}/assets/images/technologies.png);
+    background-image: url(#{$base-url}/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 23% right 1%;
     text-align: left;
@@ -242,7 +242,7 @@
       }
 
       &-second {
-        margin-bottom: 32rem;
+        margin-bottom: 36rem;
       }
     }
 
