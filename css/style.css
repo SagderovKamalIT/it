@@ -154,9 +154,14 @@ h2 {
     border-radius: 2.5rem;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 420px) {
   html {
     font-size: 45%;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 40%;
   }
 }
 .intro {
@@ -825,12 +830,16 @@ h2 {
   font-family: "Inter", sans-serif;
   margin: 3.5rem 0;
 }
+
 @media (max-width: 460px) {
   .education {
     padding: 0 1rem 4rem 1rem;
   }
   .education__container {
     padding: 1.3rem 0;
+  }
+  .education__container-text-mobile {
+    padding: 0;
   }
   .education__container h2 {
     font-size: 1.7rem;
@@ -855,7 +864,6 @@ h2 {
     margin: 1.5rem 0;
   }
 }
-
 .benefits {
   background-color: #FFFFFF;
   padding-top: 4.688rem;
@@ -1007,7 +1015,7 @@ h2 {
 }
 @media (max-width: 460px) {
   .practice__item {
-    padding: 1.3rem 4.5rem;
+    padding: 3.5rem;
     width: 100%;
   }
 }
@@ -1232,7 +1240,7 @@ h2 {
   }
   .studentlife__container p {
     font-size: 2rem;
-    line-height: 2.3rem;
+    line-height: 2rem;
   }
   .studentlife__container-span {
     line-height: 2.25rem;
@@ -1300,22 +1308,22 @@ h2 {
   }
   .manager__title {
     margin-bottom: 1rem;
-    font-size: 2.7rem;
-    text-align: center;
+    font-size: 2.2rem;
+    text-align: left;
   }
   .manager__container {
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
   }
   .manager__container-img {
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
   }
   .manager__container-text h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 0.8rem;
-    text-align: center;
+    text-align: left;
   }
   .manager__container-text p {
     font-size: 1.3rem;
@@ -1330,9 +1338,10 @@ h2 {
     align-items: left;
     justify-content: left;
     gap: 0.4rem;
+    margin-bottom: 0.1rem;
   }
   .manager__container-contacts h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     margin-right: 0;
   }
@@ -1385,9 +1394,9 @@ h2 {
 
 @media (max-width: 460px) {
   .professors h2 {
-    font-size: 2.7rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
   }
   .professors__section {
     grid-template-columns: 1fr;
@@ -1399,13 +1408,13 @@ h2 {
   }
   .professors__container {
     flex-direction: row;
-    gap: 1rem;
+    gap: 2.5rem;
     align-items: center;
     text-align: center;
   }
   .professors__container-img {
-    width: 15rem;
-    height: 15rem;
+    width: 13.5rem;
+    height: 13.5rem;
   }
   .professors__container-text h3 {
     font-size: 1.4rem;

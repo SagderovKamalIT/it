@@ -58,9 +58,9 @@
 @media (max-width: 460px) {
   .professors {
     h2 {
-      font-size: 2.7rem;
-      margin-bottom: 1rem;
-      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
     }
 
 
@@ -76,13 +76,13 @@
 
     &__container {
       flex-direction: row;
-      gap: 1rem;
+      gap: 2.5rem;
       align-items: center;
       text-align: center;
 
       &-img {
-        width: 15rem;
-        height: 15rem;
+        width: 13.5rem;
+        height: 13.5rem;
       }
 
       &-text {

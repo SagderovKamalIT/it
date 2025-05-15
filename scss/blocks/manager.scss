@@ -62,26 +62,26 @@
 
     &__title {
       margin-bottom: 1rem;
-      font-size: 2.7rem;
-      text-align: center;
+      font-size: 2.2rem;
+      text-align: left;
     }
 
     &__container {
       flex-direction: row;
-      gap: 2rem;
+      gap: 1.5rem;
       align-items: center;
 
       &-img {
-        width: 16rem;
-        height: 16rem;
+        width: 15rem;
+        height: 15rem;
       }
 
       &-text {
 
         h3 {
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           margin-bottom: 0.8rem;
-          text-align: center;
+          text-align: left;
         }
 
         p {
@@ -99,10 +99,11 @@
           align-items: left;
           justify-content: left;
           gap: 0.4rem;
+          margin-bottom: 0.1rem;
         }
 
         h4 {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           margin-bottom: 0.5rem;
           margin-right: 0;
         }
