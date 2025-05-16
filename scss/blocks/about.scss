@@ -51,6 +51,10 @@
       color: $white;
     }
 
+    &-title-mobile {
+      display: none;
+    }
+
     &-text {
       font-size: 1.625rem;
       color: $mega-teal;
@@ -151,8 +155,8 @@
 
   .about {
     padding: 2rem 1rem 0 1rem;
-    // background-image: url(../../assets/images/technologies.png);
-    background-image: url(#{$base-url}/assets/images/technologies.png);
+     background-image: url(../../assets/images/technologies.png);
+    // background-image: url(#{$base-url}/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 23% right 1%;
     text-align: left;
@@ -167,6 +171,7 @@
       text-align: left;
       order: 1;
     }
+
 
     &__content {
       display: flex;
@@ -185,14 +190,14 @@
         position: absolute;
         display: inline;
         text-decoration: none;
-        width: 45%;
+        width: 17rem;
         font-size: 1.3rem;
         padding: 0.7rem;
         text-align: center;
         line-height: 1.4;
         border-radius: 10rem;
         right: 0;
-        top: 12rem;
+        top: 11.8rem;
          z-index: 10;
       }
 
@@ -222,16 +227,26 @@
 
 
       &-title {
+        // font-size: 3rem;
+        // line-height: 1.2;
+        // order: 3;
+        // width: 39rem;
+        display: none;
+      }
+
+      &-title-mobile {
+        display: contents;
         font-size: 3rem;
         line-height: 1.2;
         order: 3;
         width: 39rem;
+        color: $white
       }
 
       &-text {
         font-size: 2rem;
         line-height: 1.6;
-        order: 0;
+        order: -1;
       }
 
       &-repeat {

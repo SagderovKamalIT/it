@@ -410,9 +410,6 @@ h2 {
   line-height: 111%;
   color: #FFFFFF;
 }
-.about__section-title-mobile {
-  display: none;
-}
 .about__section-text {
   font-size: 1.625rem;
   color: #18cbed;
@@ -492,7 +489,7 @@ h2 {
   }
   .about {
     padding: 2rem 1rem 0 1rem;
-    background-image: url(../../assets/images/technologies.png);
+    background-image: url(/managment-in-IT/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 23% right 1%;
     text-align: left;
@@ -523,14 +520,14 @@ h2 {
     position: absolute;
     display: inline;
     text-decoration: none;
-    width: 17rem;
+    width: 45%;
     font-size: 1.3rem;
     padding: 0.7rem;
     text-align: center;
     line-height: 1.4;
     border-radius: 10rem;
     right: 0;
-    top: 11.8rem;
+    top: 12rem;
     z-index: 10;
   }
   .about__section-btn:hover {
@@ -551,20 +548,15 @@ h2 {
     width: 40rem;
   }
   .about__section-title {
-    display: none;
-  }
-  .about__section-title-mobile {
-    display: contents;
     font-size: 3rem;
     line-height: 1.2;
     order: 3;
     width: 39rem;
-    color: #FFFFFF;
   }
   .about__section-text {
     font-size: 2rem;
     line-height: 1.6;
-    order: -1;
+    order: 0;
   }
   .about__section-repeat {
     display: flex;
@@ -1826,4 +1818,4 @@ h2 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */
