@@ -492,7 +492,7 @@ h2 {
   }
   .about {
     padding: 2rem 1rem 0 1rem;
-    background-image: url(../../assets/images/technologies.png);
+    background-image: url(/managment-in-IT/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 23% right 1%;
     text-align: left;
@@ -794,6 +794,7 @@ h2 {
     color: #FFFFFF;
     background-color: #087BAB;
     border: 0.25rem solid #FFFFFF;
+    pointer-events: none;
   }
   .career__text {
     gap: 1rem;
@@ -1099,6 +1100,7 @@ h2 {
 .practice__item p {
   font-family: "Inter", sans-serif;
   font-size: 1.875rem;
+  font-weight: 400;
 }
 @media (max-width: 460px) {
   .practice__item p {
@@ -1641,7 +1643,10 @@ h2 {
 .footer__contacts-text span {
   padding-right: 1rem;
 }
-.footer__contacts-button button {
+.footer__contacts-button {
+  margin-top: 1.8rem;
+}
+.footer__contacts-button-link {
   border: 0.25rem solid #FFFFFF;
   background-color: #FFFFFF;
   border-radius: 1.875rem;
@@ -1650,8 +1655,10 @@ h2 {
   padding: 1.906rem 3.344rem 1.906rem 3.344rem;
   cursor: pointer;
   font-family: inherit;
+  color: #054B71;
+  text-decoration: none;
 }
-.footer__contacts-button button:hover {
+.footer__contacts-button-link:hover {
   border: 0.25rem solid #FFFFFF;
   background-color: #054B71;
   border-radius: 1.875rem;
@@ -1660,14 +1667,6 @@ h2 {
   padding: 1.906rem 3.344rem 1.906rem 3.344rem;
   cursor: pointer;
   font-family: inherit;
-}
-.footer__contacts-button button a {
-  color: #054B71;
-  text-decoration: none;
-  padding: 3.344rem 1.906rem;
-}
-.footer__contacts-button button a:hover {
-  color: #FFFFFF;
 }
 .footer__address {
   display: flex;
@@ -1772,9 +1771,26 @@ h2 {
   .footer__contacts-text h3 {
     font-size: 2.7rem;
   }
-  .footer__contacts-button button {
+  .footer__contacts-button-link {
     font-size: 1.7rem;
     padding: 1rem 2rem;
+    border: 0.25rem solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 1.7rem;
+    color: #054B71;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .footer__contacts-button-link:hover {
+    border: 0.25rem solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 1.7rem;
+    color: #054B71;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
   }
   .footer__address {
     gap: 0.7rem;
@@ -1823,6 +1839,7 @@ h2 {
     text-align: center;
     opacity: 0.7;
     margin-bottom: 3rem;
+    font-weight: 300;
   }
 }
 

@@ -34,24 +34,16 @@
     }
 
     &-button {
-      button {
+      margin-top: 1.8rem;
+      &-link {
         @include btn($white, $white, 1.875rem, $water-course, 2rem, 1.906rem, 3.344rem, 1.906rem, 3.344rem);
         font-family: inherit;
+        color: $water-course;
+         text-decoration: none;
 
         &:hover {
            @include btn($white, $water-course, 1.875rem, $white, 2rem, 1.906rem, 3.344rem, 1.906rem, 3.344rem);
         font-family: inherit;
-        }
-
-
-        a {
-          color: $water-course;
-          text-decoration: none;
-          padding: 3.344rem 1.906rem;
-
-          &:hover {
-             color: $white;
-          }
         }
       }
     }
@@ -183,11 +175,28 @@
       }
 
       &-button {
-        button {
+        &-link {
           font-size: 1.7rem;
           padding: 1rem 2rem;
+          @include btn($white, $white, 1.7rem, $water-course, 2rem, 1rem, 2rem, 1rem, 2rem);
+         font-family: inherit;
+
+         
+        &:hover {
+        
+           @include btn($white, $white, 1.7rem, $water-course, 2rem, 1rem, 2rem, 1rem, 2rem);
+
+
+    
+        
         }
+        }
+        
+
+
       }
+
+  
     }
 
     &__address {
@@ -249,6 +258,7 @@
       text-align: center;
       opacity: 0.7;
       margin-bottom: 3rem;
+      font-weight: 300;
     }
   }
 }

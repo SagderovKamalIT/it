@@ -155,8 +155,8 @@
 
   .about {
     padding: 2rem 1rem 0 1rem;
-     background-image: url(../../assets/images/technologies.png);
-    // background-image: url(#{$base-url}/assets/images/technologies.png);
+    //  background-image: url(../../assets/images/technologies.png);
+    background-image: url(#{$base-url}/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 23% right 1%;
     text-align: left;
@@ -227,10 +227,6 @@
 
 
       &-title {
-        // font-size: 3rem;
-        // line-height: 1.2;
-        // order: 3;
-        // width: 39rem;
         display: none;
       }
 
