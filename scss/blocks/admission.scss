@@ -18,7 +18,6 @@
     &::before {
       position: absolute;
       content: "";
-      // background: url(../../assets/icons/admission-vertical-line.svg) no-repeat;
       background: url(#{$base-url}/assets/icons/admission-vertical-line.svg) no-repeat;
       background-size: contain;
       left: 0;
