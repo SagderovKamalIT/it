@@ -417,6 +417,7 @@ h2 {
   background-color: #020D23;
   padding: 4.313rem 0 2.125rem 0;
   background-image: url(/managment-in-IT/assets/images/technologies.png);
+  background-image: url(/it/assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
@@ -538,6 +539,7 @@ h2 {
   .about {
     padding: 2rem 1rem 0 1rem;
     background-image: url(/managment-in-IT/assets/images/technologies.png);
+    background-image: url(/it/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 23% right 1%;
     text-align: left;
@@ -715,6 +717,7 @@ h2 {
   position: absolute;
   content: "";
   background: url(/managment-in-IT/assets/icons/double-lines.svg) no-repeat;
+  background: url(/it/assets/icons/double-lines.svg) no-repeat;
   background-position: top left;
   background-size: contain;
   width: 27rem;
@@ -724,6 +727,7 @@ h2 {
   position: absolute;
   content: "";
   background: url(/managment-in-IT/assets/icons/long-line.svg) no-repeat;
+  background: url(/it/assets/icons/long-line.svg) no-repeat;
   background-position: bottom left;
   background-size: contain;
   width: 95rem;
@@ -739,6 +743,7 @@ h2 {
   justify-content: space-between;
   gap: 5.625rem;
   background: url(/managment-in-IT/assets/icons/bracket.svg) no-repeat;
+  background: url(/it/assets/icons/bracket.svg) no-repeat;
   background-repeat: no-repeat;
   background-position: 27rem;
   background-size: contain;
@@ -807,6 +812,7 @@ h2 {
   }
   .career::after {
     background: url(/managment-in-IT/assets/icons/career-line.svg) no-repeat;
+    background: url(/it/assets/icons/career-line.svg) no-repeat;
     background-position: bottom left;
     background-size: contain;
     bottom: 0;
@@ -834,6 +840,7 @@ h2 {
     text-align: center;
     line-height: 1.4;
     border-radius: 10rem;
+    z-index: 1000;
   }
   .career__content-button:hover {
     color: #FFFFFF;
@@ -875,6 +882,7 @@ h2 {
   position: absolute;
   content: "";
   background: url(/managment-in-IT/assets/icons/education-long-line.svg) no-repeat;
+  background: url(/it/assets/icons/education-long-line.svg) no-repeat;
   background-size: contain;
   background-position: bottom left;
   width: 80rem;
@@ -889,6 +897,7 @@ h2 {
   position: absolute;
   content: "";
   background: url(/managment-in-IT/assets/icons/education-vertical-line.svg) no-repeat;
+  background: url(/it/assets/icons/education-vertical-line.svg) no-repeat;
   background-size: contain;
   background-position: bottom right;
   bottom: -25rem;
@@ -1579,6 +1588,7 @@ h2 {
   position: absolute;
   content: "";
   background: url(/managment-in-IT/assets/icons/admission-vertical-line.svg) no-repeat;
+  background: url(/it/assets/icons/admission-vertical-line.svg) no-repeat;
   background-size: contain;
   left: 0;
   top: 0;

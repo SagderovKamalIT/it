@@ -7,6 +7,7 @@
     position: absolute;
     content: '';
       background: url(#{$base-url}/assets/icons/education-long-line.svg) no-repeat;
+       background: url(#{$domen-url}/assets/icons/education-long-line.svg) no-repeat;
     background-size: contain;
     background-position: bottom left;
     width: 80rem;
@@ -23,6 +24,7 @@
     position: absolute;
     content: '';
     background: url(#{$base-url}/assets/icons/education-vertical-line.svg) no-repeat;
+     background: url(#{$domen-url}/assets/icons/education-vertical-line.svg) no-repeat;
     background-size: contain;
     background-position: bottom right;
     bottom: -25rem;
