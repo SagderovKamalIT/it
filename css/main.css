@@ -167,6 +167,51 @@ h2 {
     font-size: 40%;
   }
 }
+.cookie-notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00bcd4;
+  color: #333;
+  padding: 15px;
+  text-align: center;
+  z-index: 9999;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.cookie-notification button {
+  background-color: #00bcd4;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 460px) {
+  .cookie-notification {
+    padding: 12px;
+  }
+  .cookie-notification button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 461px) {
+  .cookie-notification button:hover {
+    background-color: #00a8cc;
+  }
+}
+@media screen and (max-width: 460px) {
+  .cookie-notification button:hover {
+    background-color: #00bcd4;
+  }
+}
 .intro {
   background-color: #020D23;
   padding-top: 3.75rem;
@@ -371,7 +416,7 @@ h2 {
 .about {
   background-color: #020D23;
   padding: 4.313rem 0 2.125rem 0;
-  background-image: url(/managment-in-IT/assets/images/technologies.png);
+  background-image: url(/it/assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
@@ -492,7 +537,7 @@ h2 {
   }
   .about {
     padding: 2rem 1rem 0 1rem;
-    background-image: url(/managment-in-IT/assets/images/technologies.png);
+    background-image: url(/it/assets/images/technologies.png);
     background-size: contain;
     background-position: bottom 23% right 1%;
     text-align: left;
@@ -669,7 +714,7 @@ h2 {
 .career::before {
   position: absolute;
   content: "";
-  background: url(/managment-in-IT/assets/icons/double-lines.svg) no-repeat;
+  background: url(/it/assets/icons/double-lines.svg) no-repeat;
   background-position: top left;
   background-size: contain;
   width: 27rem;
@@ -678,7 +723,7 @@ h2 {
 .career::after {
   position: absolute;
   content: "";
-  background: url(/managment-in-IT/assets/icons/long-line.svg) no-repeat;
+  background: url(/it/assets/icons/long-line.svg) no-repeat;
   background-position: bottom left;
   background-size: contain;
   width: 95rem;
@@ -693,7 +738,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 5.625rem;
-  background: url(/managment-in-IT/assets/icons/bracket.svg) no-repeat;
+  background: url(/it/assets/icons/bracket.svg) no-repeat;
   background-repeat: no-repeat;
   background-position: 27rem;
   background-size: contain;
@@ -761,7 +806,7 @@ h2 {
     display: none;
   }
   .career::after {
-    background: url(/managment-in-IT/assets/icons/career-line.svg) no-repeat;
+    background: url(/it/assets/icons/career-line.svg) no-repeat;
     background-position: bottom left;
     background-size: contain;
     bottom: 0;
@@ -794,7 +839,6 @@ h2 {
     color: #FFFFFF;
     background-color: #087BAB;
     border: 0.25rem solid #FFFFFF;
-    pointer-events: none;
   }
   .career__text {
     gap: 1rem;
@@ -829,7 +873,7 @@ h2 {
 .education::after {
   position: absolute;
   content: "";
-  background: url(/managment-in-IT/assets/icons/education-long-line.svg) no-repeat;
+  background: url(/it/assets/icons/education-long-line.svg) no-repeat;
   background-size: contain;
   background-position: bottom left;
   width: 80rem;
@@ -843,7 +887,7 @@ h2 {
 .education__container::after {
   position: absolute;
   content: "";
-  background: url(/managment-in-IT/assets/icons/education-vertical-line.svg) no-repeat;
+  background: url(/it/assets/icons/education-vertical-line.svg) no-repeat;
   background-size: contain;
   background-position: bottom right;
   bottom: -25rem;
@@ -1533,7 +1577,7 @@ h2 {
 .admission__list::before {
   position: absolute;
   content: "";
-  background: url(/managment-in-IT/assets/icons/admission-vertical-line.svg) no-repeat;
+  background: url(/it/assets/icons/admission-vertical-line.svg) no-repeat;
   background-size: contain;
   left: 0;
   top: 0;
