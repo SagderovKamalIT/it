@@ -1027,16 +1027,19 @@ h2 {
   padding: 0;
   transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
 }
-.benefits__content ul {
+.benefits__content ul, .benefits__content ol {
   font-family: "Inter", sans-serif;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   margin: 0;
   font-size: 2.6rem;
   line-height: 1.5;
   color: #000000;
 }
-.benefits__content ul li {
+.benefits__content ul li, .benefits__content ol li {
   margin-bottom: 1rem;
+}
+.benefits__content ol {
+  list-style-type: disc;
 }
 .benefits__content.active {
   max-height: 62.5rem;
