@@ -416,10 +416,22 @@ h2 {
 .about {
   background-color: #020D23;
   padding: 4.313rem 0 2.125rem 0;
-  background-image: url(/it/assets/images/technologies.png);
+  background-image: url(../assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
+  animation: bg-breathe 8s ease-in-out infinite;
+  will-change: background-size, background-position;
+}
+@keyframes bg-breathe {
+  0%, 100% {
+    background-size: 59.5%;
+    background-position: right 0 top 10%;
+  }
+  50% {
+    background-size: 62.5%;
+    background-position: right 0 top 10%;
+  }
 }
 .about__title {
   font-size: 2.25rem;
@@ -536,14 +548,41 @@ h2 {
     background-size: contain;
   }
   .about {
+    position: relative;
     padding: 2rem 1rem 0 1rem;
-    background-image: url(/it/assets/images/technologies.png);
-    background-size: contain;
-    background-position: bottom 23% right 1%;
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow: hidden;
+    z-index: 1;
+    background-image: none;
+  }
+  .about::before {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+    width: 89vw;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-image: url(../../assets/images/technologies.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: scale(1);
+    animation: zoom-smooth 8s ease-in-out infinite;
+    will-change: transform;
+    z-index: -1;
+    pointer-events: none;
+  }
+  @keyframes zoom-smooth {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
   }
   .about__title {
     font-size: 2rem;
@@ -714,7 +753,7 @@ h2 {
 .career::before {
   position: absolute;
   content: "";
-  background: url(/it/assets/icons/double-lines.svg) no-repeat;
+  background: url(../assets/icons/double-lines.svg) no-repeat;
   background-position: top left;
   background-size: contain;
   width: 27rem;
@@ -723,7 +762,7 @@ h2 {
 .career::after {
   position: absolute;
   content: "";
-  background: url(/it/assets/icons/long-line.svg) no-repeat;
+  background: url(../assets/icons/long-line.svg) no-repeat;
   background-position: bottom left;
   background-size: contain;
   width: 95rem;
@@ -738,7 +777,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 5.625rem;
-  background: url(/it/assets/icons/bracket.svg) no-repeat;
+  background: url(../assets/icons/bracket.svg) no-repeat;
   background-repeat: no-repeat;
   background-position: 27rem;
   background-size: contain;
@@ -806,7 +845,7 @@ h2 {
     display: none;
   }
   .career::after {
-    background: url(/it/assets/icons/career-line.svg) no-repeat;
+    background: url(../assets/icons/career-line.svg) no-repeat;
     background-position: bottom left;
     background-size: contain;
     bottom: 0;
@@ -873,7 +912,7 @@ h2 {
 .education::after {
   position: absolute;
   content: "";
-  background: url(/it/assets/icons/education-long-line.svg) no-repeat;
+  background: url(../assets/icons/education-long-line.svg) no-repeat;
   background-size: contain;
   background-position: bottom left;
   width: 80rem;
@@ -887,7 +926,7 @@ h2 {
 .education__container::after {
   position: absolute;
   content: "";
-  background: url(/it/assets/icons/education-vertical-line.svg) no-repeat;
+  background: url(../assets/icons/education-vertical-line.svg) no-repeat;
   background-size: contain;
   background-position: bottom right;
   bottom: -25rem;
@@ -1580,7 +1619,7 @@ h2 {
 .admission__list::before {
   position: absolute;
   content: "";
-  background: url(/it/assets/icons/admission-vertical-line.svg) no-repeat;
+  background: url(../assets/icons/admission-vertical-line.svg) no-repeat;
   background-size: contain;
   left: 0;
   top: 0;

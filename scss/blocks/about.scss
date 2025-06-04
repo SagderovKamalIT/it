@@ -1,10 +1,23 @@
 .about {
-  background-color: $legend-plate;
+ background-color: $legend-plate;
   padding: 4.313rem 0 2.125rem 0;
-  background-image: url(#{$domen-url}/assets/images/technologies.png);
+  background-image: url(../assets/images/technologies.png);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 10%;
+  animation: bg-breathe 8s ease-in-out infinite;
+  will-change: background-size, background-position;
+
+  @keyframes bg-breathe {
+    0%, 100% {
+      background-size: 59.5%;
+      background-position: right 0 top 10%;
+    }
+    50% {
+      background-size: 62.5%;
+      background-position: right 0 top 10%;
+    }
+  }
 
   &__title {
     font-size: 2.25rem;
@@ -153,14 +166,44 @@
   }
 
   .about {
-    padding: 2rem 1rem 0 1rem;
-    background-image: url(#{$domen-url}/assets/images/technologies.png);
-    background-size: contain;
-    background-position: bottom 23% right 1%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+     position: relative;
+  padding: 2rem 1rem 0 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden; 
+  z-index: 1;
+  background-image: none;
+
+  &::before {
+    content: "";
+        position: absolute;
+        bottom: 5%;
+        right: 6%;
+        width: 89vw;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        background-image: url(../../assets/images/technologies.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transform: scale(1);
+        animation: zoom-smooth 8s ease-in-out infinite;
+        will-change: transform;
+        z-index: -1;
+        pointer-events: none;
+  }
+
+
+@keyframes zoom-smooth {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); 
+  }
+}
 
     &__title {
       font-size: 2rem;
