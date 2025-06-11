@@ -1075,7 +1075,9 @@ h2 {
   color: #000000;
 }
 .benefits__content ul li, .benefits__content ol li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
 }
 .benefits__content ol {
   list-style-type: disc;
